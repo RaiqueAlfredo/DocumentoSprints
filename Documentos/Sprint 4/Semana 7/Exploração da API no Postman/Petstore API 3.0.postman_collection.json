@@ -1,0 +1,1790 @@
+{
+	"info": {
+		"_postman_id": "66424169-b79f-42b5-8a67-a075a64f9acd",
+		"name": "Petstore API 3.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44548099",
+		"_collection_link": "https://raique-2993386.postman.co/workspace/Petstore-API~05e0aeb5-6e95-4045-a001-61381967cc88/collection/44548099-66424169-b79f-42b5-8a67-a075a64f9acd?action=share&source=collection_link&creator=44548099"
+	},
+	"item": [
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "Atualizar um pet existente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"doggssssss\",\r\n  \"category\": {\r\n    \"id\": 111,\r\n    \"name\": \"auau\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}pet",
+							"host": [
+								"{{url}}pet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 8,\r\n  \"name\": \"doggssssss\",\r\n  \"category\": {\r\n    \"id\": 11,\r\n    \"name\": \"auau\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://petstore3.swagger.io/api/v3/pet",
+									"protocol": "https",
+									"host": [
+										"petstore3",
+										"swagger",
+										"io"
+									],
+									"path": [
+										"api",
+										"v3",
+										"pet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:21:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "141"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"category\": {\n        \"id\": 11,\n        \"name\": \"auau\"\n    },\n    \"name\": \"doggssssss\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 8,\r\n  \"name\": \"doggssssss\",\r\n  \"category\": {\r\n    \"id\": 1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1,\r\n    \"name\": \"auau\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://petstore3.swagger.io/api/v3/pet",
+									"protocol": "https",
+									"host": [
+										"petstore3",
+										"swagger",
+										"io"
+									],
+									"path": [
+										"api",
+										"v3",
+										"pet"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:22:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: unable to convert input to io.swagger.petstore.model.Pet\"\n}"
+						},
+						{
+							"name": "Response 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1111,\r\n  \"name\": \"doggssssss\",\r\n  \"category\": {\r\n    \"id\": 111111,\r\n    \"name\": \"auau\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}pet",
+									"host": [
+										"{{url}}pet"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:37:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/xml"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "Pet not found"
+						}
+					]
+				},
+				{
+					"name": "Adicionar um novo pet à loja",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1923912391239120,\r\n  \"name\": \"doggie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Dogs\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}pet",
+							"host": [
+								"{{url}}pet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1923912391239120,\r\n  \"name\": \"doggie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Dogs\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}pet",
+									"host": [
+										"{{url}}pet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:31:48 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1923912391239120,\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Dogs\"\n    },\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1923912391239120,\r\n  \"name\": \"doggie\",\r\n  \"category\": {\r\n    \"id\": 1a,\r\n    \"name\": \"Dogs\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}pet",
+									"host": [
+										"{{url}}pet"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:36:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: unable to convert input to io.swagger.petstore.model.Pet\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Buscar pets por status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}pet/findByStatus?status=pet",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "sold",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pet"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByStatus?status=available&status=pending&status=sold",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										},
+										{
+											"key": "status",
+											"value": "pending"
+										},
+										{
+											"key": "status",
+											"value": "sold"
+										},
+										{
+											"key": "status",
+											"value": "pet",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:35:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "8109"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 123458521,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"Milou\",\n        \"photoUrls\": [\n            \"no\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 222,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"dogs\"\n        },\n        \"name\": \"john\",\n        \"photoUrls\": [\n            \"www.demo.com\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 4,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"rrrrr\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag1\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag2\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 2277727624137348645,\n        \"category\": {\n            \"id\": 9070225841639725908,\n            \"name\": \"q|9.g`)U/j&;G;\"\n        },\n        \"name\": \"O7c_a&XdIPEx?yCeCmc]6`|Epe$Y{igtvO1N{t/c^m1}.`G6k1)/4?b,II0kE|qF\",\n        \"photoUrls\": [],\n        \"tags\": [\n            {\n                \"id\": 7512562785331116418,\n                \"name\": \"kuB-Rb-ui7H#Q}TI1jUfujo{qi\"\n            },\n            {\n                \"id\": 256780271437404413,\n                \"name\": \"qJyM'!pz}>;gpzt{9A<?pGSuu*Ic(\"\n            },\n            {\n                \"id\": 8155936153878275842,\n                \"name\": \"mE`R}.b<R-BM-voM/G^:Kc+NKNvo[R5u|'hj[B\"\n            },\n            {\n                \"id\": 2596194896564302395,\n                \"name\": \"S_OU__f+~sG*YK2&zL\"\n            },\n            {\n                \"id\": 3716129054702054855,\n                \"name\": \"6ZLpPlqk?iGbM]HZ2{.s?=YO&XXJ6`#w|u5#e%l<hdl'q?QV';p-b]95F$;1\"\n            },\n            {\n                \"id\": 6749085625019624597,\n                \"name\": \"jxHMhe}SWPT!8n/a+<7=E/q,(&gM!&]DU,#l\"\n            },\n            {\n                \"id\": 3784267581817879240,\n                \"name\": \"CoFgb4)a69N8g;QrN{.`(A'qBIy.9U,$EJc9!LDSSG1lT?\"\n            },\n            {\n                \"id\": 8822114933051025660,\n                \"name\": \"u(DYJe{x^j%_XWt5Zc.:a0*kf}YH6wE_C1aB+/EJYLC8K?4bMF(4OR79v=^iI`X-\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 777,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"https://example.com/photo1.jpg\",\n            \"https://example.com/photo2.jpg\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 101,\n                \"name\": \"fluffy\"\n            },\n            {\n                \"id\": 102,\n                \"name\": \"friendly\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 20,\n        \"category\": {\n            \"id\": 5,\n            \"name\": \"Category\"\n        },\n        \"name\": \"dog\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 6,\n                \"name\": \"tag\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 105,\n        \"category\": {\n            \"id\": 105,\n            \"name\": \"cats\"\n        },\n        \"name\": \"Alaska\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 105,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 123456,\n        \"name\": \"doggie\",\n        \"photoUrls\": [],\n        \"tags\": [],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 101,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dog\"\n        },\n        \"name\": \"Ronney\",\n        \"photoUrls\": [\n            \"https://ex.com\",\n            \"https://dog.com\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"Red\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Black\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 51,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"Puppy\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"tag35\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 300,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 999,\n        \"name\": \"test\",\n        \"photoUrls\": [],\n        \"tags\": [],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 78941621110528130,\n        \"category\": {\n            \"id\": 5693435386663838,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"example_string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 6684782647618949,\n                \"name\": \"example_string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 4695089508926507266,\n        \"category\": {\n            \"id\": 7457018657180232091,\n            \"name\": \"z(R9~VL']VP4UgqEj&3sj)z\"\n        },\n        \"name\": \"2uUMHKvNL,_PqP'UW-y\",\n        \"photoUrls\": [\n            \"xl6ausV:ze!%)P?]'{8-PI#M3jJ~$~g-62\",\n            \"U2)?#!io](5c]D?5*-nXY.F4G|Q6-*ngIm_~y\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 550376411036035038,\n                \"name\": \"6c0;#t&mecBhi$>m5DpX((w\"\n            },\n            {\n                \"id\": 5708072040781835203,\n                \"name\": \"aliYY3%;H}Q%^GHzw{^9[T,}H|^rh;b8T[=|}f.QAgnf>}HSKt5M/)+ip/1C\"\n            },\n            {\n                \"id\": 8985639566925020555,\n                \"name\": \"ITYeQ?I_.zmzMP-'2q,ym8_N%+Z)%]D+k,U}TULbmE^p\"\n            },\n            {\n                \"id\": 8661061504822303776,\n                \"name\": \")!v`5c(4swTb_Y0~sc'kjuetH6jiplrKKWi+f'tmwAhyOR7\"\n            },\n            {\n                \"id\": 6393340193169096310,\n                \"name\": \"VRGcQ]Qu?d4X&(,Ha9aIL3g]jRinij3}7{)~>3L0(\"\n            },\n            {\n                \"id\": 2269434098780501933,\n                \"name\": \"6H,+A`O$FE%JiWI_h`9b|O_WfR;Qi(W]5+Rz\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 5344875704796977653,\n        \"category\": {\n            \"id\": 7457018657180232091,\n            \"name\": \"z(R9~VL']VP4UgqEj&3sj)z\"\n        },\n        \"name\": \"2uUMHKvNL,_PqP'UW-y\",\n        \"photoUrls\": [\n            \"xl6ausV:ze!%)P?]'{8-PI#M3jJ~$~g-62\",\n            \"U2)?#!io](5c]D?5*-nXY.F4G|Q6-*ngIm_~y\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 550376411036035038,\n                \"name\": \"6c0;#t&mecBhi$>m5DpX((w\"\n            },\n            {\n                \"id\": 5708072040781835203,\n                \"name\": \"aliYY3%;H}Q%^GHzw{^9[T,}H|^rh;b8T[=|}f.QAgnf>}HSKt5M/)+ip/1C\"\n            },\n            {\n                \"id\": 8985639566925020555,\n                \"name\": \"ITYeQ?I_.zmzMP-'2q,ym8_N%+Z)%]D+k,U}TULbmE^p\"\n            },\n            {\n                \"id\": 8661061504822303776,\n                \"name\": \")!v`5c(4swTb_Y0~sc'kjuetH6jiplrKKWi+f'tmwAhyOR7\"\n            },\n            {\n                \"id\": 6393340193169096310,\n                \"name\": \"VRGcQ]Qu?d4X&(,Ha9aIL3g]jRinij3}7{)~>3L0(\"\n            },\n            {\n                \"id\": 2269434098780501933,\n                \"name\": \"iWI_h`9b|O_WfR;Qi(W]5+Rzd~O&iWTOlj`'<22HDHucTC}av';#_PqHU+H>3NaD\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 11,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 184,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"lucy\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 1287138758235,\n        \"name\": \"Woofy Mc Woofer\",\n        \"photoUrls\": [],\n        \"tags\": [],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 6,\n        \"category\": {\n            \"id\": 11,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssss\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 8,\n        \"category\": {\n            \"id\": 111,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssss\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 1923912391239120,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 10,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"\\\"case when cast(pg_sleep(15.0) as varchar) > '' then 0 else 1 end -- \"\n        ],\n        \"tags\": [\n            {\n                \"id\": 10,\n                \"name\": \"John Doe\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Pet1\",\n        \"photoUrls\": [\n            \"test1\",\n            \"test2\"\n        ],\n        \"tags\": [],\n        \"status\": \"available\"\n    }\n]"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByStatus?status=pet",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "pending",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "sold",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "pet"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:36:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "133"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: query parameter `status value `pet` is not in the allowable values `[available, pending, sold]`\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Buscar pets por tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}pet/findByTags?tags=tag1&tags=tag3&tags=string",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								"findByTags"
+							],
+							"query": [
+								{
+									"key": "tags",
+									"value": "tag1"
+								},
+								{
+									"key": "tags",
+									"value": "tag3"
+								},
+								{
+									"key": "tags",
+									"value": "string"
+								},
+								{
+									"key": "tags",
+									"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200 tag1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByTags?tags=tag1",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByTags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "tag1"
+										},
+										{
+											"key": "tags",
+											"value": "tag3",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "string",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:53:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "334"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"Dog 1\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag1\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag2\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 12345,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"dogs\"\n        },\n        \"name\": \"\",\n        \"photoUrls\": [\n            \"https://fluffydog.img\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"tag1\"\n            },\n            {\n                \"id\": 1,\n                \"name\": \"tag2\"\n            }\n        ],\n        \"status\": \"available\"\n    }\n]"
+						},
+						{
+							"name": "Response 200 tag3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByTags?tags=tag3",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByTags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "tag1",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "tag3"
+										},
+										{
+											"key": "tags",
+											"value": "string",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:53:42 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 9,\n        \"category\": {\n            \"id\": 4,\n            \"name\": \"Lions\"\n        },\n        \"name\": \"Canelo\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag3\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag4\"\n            }\n        ],\n        \"status\": \"available\"\n    }\n]"
+						},
+						{
+							"name": "Response 200 string",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByTags?tags=string",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByTags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "tag1",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "tag3",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "string"
+										},
+										{
+											"key": "tags",
+											"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:54:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1984"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4711,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"manipulatedByDev\"\n    },\n    {\n        \"id\": 15,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 1923912391239120,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 6,\n        \"category\": {\n            \"id\": 11,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssss\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 8,\n        \"category\": {\n            \"id\": 11,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssss\",\n        \"photoUrls\": [\n            \"string1\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"\"\n    }\n]"
+						},
+						{
+							"name": "Response 200 tag1,3,string",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByTags?tags=tag1&tags=tag3&tags=string",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByTags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "tag1"
+										},
+										{
+											"key": "tags",
+											"value": "tag3"
+										},
+										{
+											"key": "tags",
+											"value": "string"
+										},
+										{
+											"key": "tags",
+											"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:58:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4895"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Cats\"\n        },\n        \"name\": \"Cat 3\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag3\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag4\"\n            }\n        ],\n        \"status\": \"pending\"\n    },\n    {\n        \"id\": 123458521,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"Milou\",\n        \"photoUrls\": [\n            \"no\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 222,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"dogs\"\n        },\n        \"name\": \"john\",\n        \"photoUrls\": [\n            \"www.demo.com\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 4,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"rrrrr\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag1\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag2\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 5,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"tag2\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag2\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag3\"\n            }\n        ],\n        \"status\": \"sold\"\n    },\n    {\n        \"id\": 7,\n        \"category\": {\n            \"id\": 4,\n            \"name\": \"Lions\"\n        },\n        \"name\": \"Joseph Schwartz\",\n        \"photoUrls\": [\n            \"url1\",\n            \"url2\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"tag1\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"tag2\"\n            }\n        ],\n        \"status\": \"false\"\n    },\n    {\n        \"id\": 105,\n        \"category\": {\n            \"id\": 105,\n            \"name\": \"cats\"\n        },\n        \"name\": \"Alaska\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 105,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 300,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 11,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 184,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"lucy\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 6,\n        \"category\": {\n            \"id\": 11,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssssdoggssssss\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 8,\n        \"category\": {\n            \"id\": 111,\n            \"name\": \"auau\"\n        },\n        \"name\": \"doggssssss\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    },\n    {\n        \"id\": 1923912391239120,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Dogs\"\n        },\n        \"name\": \"doggie\",\n        \"photoUrls\": [\n            \"string\"\n        ],\n        \"tags\": [\n            {\n                \"id\": 0,\n                \"name\": \"string\"\n            }\n        ],\n        \"status\": \"available\"\n    }\n]"
+						},
+						{
+							"name": "Response 414",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/findByTags?tags=stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"findByTags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "tag1",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "tag3",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "string",
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": "stringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstringstring"
+										}
+									]
+								}
+							},
+							"status": "URI Too Long",
+							"code": 414,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 19:55:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html;charset=iso-8859-1"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "<h1>Bad Message 414</h1>\n<pre>reason: URI Too Long</pre>"
+						}
+					]
+				},
+				{
+					"name": "Buscar o pet pelo ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}pet/1",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								"1"
+							],
+							"query": [
+								{
+									"key": "petId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "petId",
+									"value": "1111",
+									"disabled": true
+								},
+								{
+									"key": "petId",
+									"value": "aaa",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/2",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"2"
+									],
+									"query": [
+										{
+											"key": "petId",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "1111",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "aaa",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:03:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Dogs\"\n    },\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/a",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"a"
+									],
+									"query": [
+										{
+											"key": "petId",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "1111",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "aaa",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:05:18 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: couldn't convert `a` to type `class java.lang.Long`\"\n}"
+						},
+						{
+							"name": "Response 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/1111",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"1111"
+									],
+									"query": [
+										{
+											"key": "petId",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "1111",
+											"disabled": true
+										},
+										{
+											"key": "petId",
+											"value": "aaa",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:03:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/xml"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "Pet not found"
+						}
+					]
+				},
+				{
+					"name": "Atualizar pet por form data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}pet/1?name=morris&status=available",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "morris"
+								},
+								{
+									"key": "status",
+									"value": "available"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/1?name=morris&status=available",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"1"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "morris"
+										},
+										{
+											"key": "status",
+											"value": "available"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:13:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "85"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"morris\",\n    \"photoUrls\": [\n        \"test1\",\n        \"test2\"\n    ],\n    \"tags\": [],\n    \"status\": \"available\"\n}"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/a?name=morris",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"a"
+									],
+									"query": [
+										{
+											"key": "petId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "morris"
+										},
+										{
+											"key": "status",
+											"value": "available",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:10:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: couldn't convert `a` to type `class java.lang.Long`\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Excluir um pet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}pet/",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/1",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:14:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "Pet deleted"
+						},
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}pet/aa",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"aa"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:14:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Input error: couldn't convert `aa` to type `class java.lang.Long`\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Carregar imagem do pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "additionalMetadata",
+									"value": "imagemGatinho",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/raiqu/Downloads/miau.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}pet/1/uploadImage",
+							"host": [
+								"{{url}}pet"
+							],
+							"path": [
+								"1",
+								"uploadImage"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "additionalMetadata",
+											"value": "imagemGatinho",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/raiqu/Downloads/miau.png",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}pet/1/uploadImage",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"1",
+										"uploadImage"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:15:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "No file uploaded"
+						},
+						{
+							"name": "Response 415",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "additionalMetadata",
+											"value": "imagemGatinho",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/raiqu/Downloads/miau.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}pet/1/uploadImage",
+									"host": [
+										"{{url}}pet"
+									],
+									"path": [
+										"1",
+										"uploadImage"
+									]
+								}
+							},
+							"status": "Unsupported Media Type",
+							"code": 415,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 20:15:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Disposition"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.53.v20231009)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 415,\n    \"message\": \"HTTP 415 Unsupported Media Type\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

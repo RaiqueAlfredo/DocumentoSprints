@@ -1,0 +1,2 @@
+# ArquivosSemanais
+Este repositório foi criado com o objetivo de centralizar e organizar documentos importantes gerados ao longo das Sprints. Ele inclui arquivos como planejamentos de testes, mapas mentais, collections do Postman e entre outros. Os documentos estão organizados em pastas correspondentes a cada semana, dentro da estrutura definida para facilitar o acesso e a navegação. Este repositório será mantido e versionado por branches.
