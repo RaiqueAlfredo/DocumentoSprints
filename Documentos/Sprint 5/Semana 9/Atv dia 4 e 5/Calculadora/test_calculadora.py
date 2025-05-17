@@ -1,2 +1,0 @@
-import pytest
-from calculadora import operacoes_matematicas, numeros_para_operacoes, realizando_calculo
