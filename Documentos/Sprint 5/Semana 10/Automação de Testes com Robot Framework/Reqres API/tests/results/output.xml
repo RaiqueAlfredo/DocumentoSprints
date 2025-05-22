@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-21T23:24:24.232267" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="C:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\tests\login_tests.robot">
+<test id="s1-t1" name="Cenário 01: POST Creates a session 200" line="7">
+<kw name="Criar uma sessão" owner="login_keywords">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-21T23:24:24.616359" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=ReqRes</arg>
+<arg>url=https://reqres.in/api</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-21T23:24:24.616178" elapsed="0.000331"/>
+</kw>
+<status status="PASS" start="2025-05-21T23:24:24.615813" elapsed="0.000764"/>
+</kw>
+<kw name="POST Endpoint /login" owner="login_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-21T23:24:24.617101" level="INFO">&amp;{payload} = { username=string | email=string | password=string }</msg>
+<var>&amp;{payload}</var>
+<arg>username=${username}</arg>
+<arg>email=${email}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-21T23:24:24.616891" elapsed="0.000231"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-05-21T23:24:25.083027" level="INFO">POST Request : url=https://reqres.in/api/login 
+ path_url=/api/login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '63'} 
+ body=b'{"username": "string", "email": "string", "password": "string"}' 
+ </msg>
+<msg time="2025-05-21T23:24:25.083154" level="INFO">POST Response : url=https://reqres.in/api/login 
+ status=400, reason=Bad Request 
+ headers={'Date': 'Thu, 22 May 2025 02:24:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '26', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9438db6ec8d19615-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747880665&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=ps3vT9xRcKfQEcnBtvt7yE%2BJZdxKmJumSk20ZCuaDkI%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747880665&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=ps3vT9xRcKfQEcnBtvt7yE%2BJZdxKmJumSk20ZCuaDkI%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '98', 'Ratelimit-Reset': '60', 'Etag': 'W/"1a-EGIcyP6BIiCXl5Gb1aph5CGf4VQ"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=13096&amp;min_rtt=13006&amp;rtt_var=5059&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=946&amp;delivery_rate=297094&amp;cwnd=161&amp;unsent_bytes=0&amp;cid=7757907b033b0887&amp;ts=402&amp;x=0"'} 
+ body={"error":"user not found"} 
+ </msg>
+<msg time="2025-05-21T23:24:25.083238" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-21T23:24:25.083823" level="FAIL">HTTPError: 400 Client Error: Bad Request for url: https://reqres.in/api/login</msg>
+<var>${response}</var>
+<arg>alias=ReqRes</arg>
+<arg>url=/login</arg>
+<arg>json=${payload}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="FAIL" start="2025-05-21T23:24:24.617195" elapsed="0.468472">HTTPError: 400 Client Error: Bad Request for url: https://reqres.in/api/login</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-21T23:24:25.085808" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-05-21T23:24:25.085903" elapsed="0.000015"/>
+</kw>
+<status status="FAIL" start="2025-05-21T23:24:24.616736" elapsed="0.469267">HTTPError: 400 Client Error: Bad Request for url: https://reqres.in/api/login</status>
+</kw>
+<tag>Login</tag>
+<status status="FAIL" start="2025-05-21T23:24:24.615287" elapsed="0.470920">HTTPError: 400 Client Error: Bad Request for url: https://reqres.in/api/login</status>
+</test>
+<doc>Cenários de testes para o endpoint /login</doc>
+<status status="FAIL" start="2025-05-21T23:24:24.233456" elapsed="0.853386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Login</stat>
+</tag>
+<suite>
+<stat name="Login Tests" id="s1" pass="0" fail="1" skip="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
