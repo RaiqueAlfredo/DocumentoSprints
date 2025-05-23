@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-22T22:44:36.814853" rpa="false" schemaversion="5">
+<suite id="s1" name="Users Tests" source="C:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\tests\users_tests.robot">
+<test id="s1-t1" name="Cenário 01: GET Fetches a user 200" line="6">
+<kw name="POST Endpoint /register" owner="register_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.202737" level="INFO">&amp;{payload} = { email=eve.holt@reqres.in | password=pistola }</msg>
+<var>&amp;{payload}</var>
+<arg>email=${email}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.202489" elapsed="0.000278"/>
+</kw>
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:37.203210" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:37.203031" elapsed="0.000317"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.202884" elapsed="0.000521"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:37.665566" level="INFO">POST Request : url=https://reqres.in/api/register 
+ path_url=/api/register 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '54'} 
+ body=b'{"email": "eve.holt@reqres.in", "password": "pistola"}' 
+ </msg>
+<msg time="2025-05-22T22:44:37.665674" level="INFO">POST Response : url=https://reqres.in/api/register 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 23 May 2025 01:44:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9440de885edb6226-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964678&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I8cP7ynicrvamS6NyQEaIF56pARhsLbce%2FnCo%2BZcy8I%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964678&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I8cP7ynicrvamS6NyQEaIF56pARhsLbce%2FnCo%2BZcy8I%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '98', 'Ratelimit-Reset': '60', 'Etag': 'W/"24-4iP0za1geN2he+ohu8F0FhCjLks"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=13440&amp;min_rtt=13376&amp;rtt_var=5062&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=940&amp;delivery_rate=305023&amp;cwnd=233&amp;unsent_bytes=0&amp;cid=c90f416c1a52f6e9&amp;ts=414&amp;x=0"'} 
+ body={"id":4,"token":"QpwL5tke4Pnpja7X4"} 
+ </msg>
+<msg time="2025-05-22T22:44:37.665771" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:37.666131" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/register</arg>
+<arg>json=&amp;{payload}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.203471" elapsed="0.462690"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.666311" elapsed="0.000505"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.667029" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.666907" elapsed="0.000150"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.667740" level="INFO">${ID_USER} = 4</msg>
+<arg>${ID_USER}</arg>
+<arg>${response.json()["id"]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.667125" elapsed="0.000661"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.201988" elapsed="0.465863"/>
+</kw>
+<kw name="GET Endpoint /users/id" owner="users_keywords">
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:37.668583" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:37.668419" elapsed="0.000278"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.668256" elapsed="0.000485"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:37.747136" level="INFO">GET Request : url=https://reqres.in/api/users/4 
+ path_url=/api/users/4 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'} 
+ body=None 
+ </msg>
+<msg time="2025-05-22T22:44:37.747232" level="INFO">GET Response : url=https://reqres.in/api/users/4 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 23 May 2025 01:44:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cf-Ray': '9440de8b3c0f1cf9-GRU', 'Server': 'cloudflare', 'Content-Encoding': 'gzip', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747951483&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=44XTtWd4%2BI7o09bhEa7EeATJ2svBOS4r0HwV1BfWLsM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747951483&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=44XTtWd4%2BI7o09bhEa7EeATJ2svBOS4r0HwV1BfWLsM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '92', 'Ratelimit-Reset': '3', 'Etag': 'W/"14a-lL3VnM8a4oDrvF3hP9cc0k6jvGc"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'Cf-Cache-Status': 'HIT', 'Age': '3002', 'Vary': 'Accept-Encoding', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=13038&amp;min_rtt=13020&amp;rtt_var=4919&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=842&amp;delivery_rate=309842&amp;cwnd=77&amp;unsent_bytes=0&amp;cid=ef28bb2e97fe0c9f&amp;ts=37&amp;x=0"'} 
+ body={"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},"support":{"url":"https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}} 
+ </msg>
+<msg time="2025-05-22T22:44:37.747443" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:37.747793" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/users/${ID_USER}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.668801" elapsed="0.079022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.748369" level="INFO">Response: {'data': {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}</msg>
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.747968" elapsed="0.000444"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.748620" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.748504" elapsed="0.000143"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.668051" elapsed="0.080638"/>
+</kw>
+<kw name="Validar se o usuário foi encontrado corretamente" owner="users_keywords">
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.749094" elapsed="0.000283"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>support</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.749448" elapsed="0.000254"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-22T22:44:37.750096" level="INFO">&amp;{user_data} = { id=4 | email=eve.holt@reqres.in | first_name=Eve | last_name=Holt | avatar=https://reqres.in/img/faces/4-image.jpg }</msg>
+<var>&amp;{user_data}</var>
+<arg>${response.json()}</arg>
+<arg>data</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.749776" elapsed="0.000340"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-22T22:44:37.750475" level="INFO">&amp;{user_support} = { url=https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral | text=Tired of writing endless social media content? Let Content Caddy generate it for you. }</msg>
+<var>&amp;{user_support}</var>
+<arg>${response.json()}</arg>
+<arg>support</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.750184" elapsed="0.000310"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.750642" level="INFO">data: {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}</msg>
+<arg>data: ${user_data}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.750564" elapsed="0.000105"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.750800" level="INFO">support: {'url': 'https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}</msg>
+<arg>support: ${user_support}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.750729" elapsed="0.000097"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.748930" elapsed="0.001929"/>
+</kw>
+<kw name="Validar se o status code é 200" owner="users_keywords">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == 200</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.751134" elapsed="0.000438"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.751857" level="INFO">Status code: 200</msg>
+<arg>Status code: ${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.751637" elapsed="0.000247"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.751000" elapsed="0.000919"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.201369" elapsed="0.550667"/>
+</test>
+<test id="s1-t2" name="Cenário 02: GET Fetches a user 404" line="12">
+<kw name="GET Endpoint /users/id 404" owner="users_keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:37.752908" level="INFO">${status_code_desejado} = 404</msg>
+<var>${status_code_desejado}</var>
+<arg>404</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.752832" elapsed="0.000094"/>
+</kw>
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:37.753275" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:37.753127" elapsed="0.000249"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.753004" elapsed="0.000413"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:38.236118" level="INFO">GET Request : url=https://reqres.in/api/users/23 
+ path_url=/api/users/23 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'} 
+ body=None 
+ </msg>
+<msg time="2025-05-22T22:44:38.236214" level="INFO">GET Response : url=https://reqres.in/api/users/23 
+ status=404, reason=Not Found 
+ headers={'Date': 'Fri, 23 May 2025 01:44:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Vary': 'Accept-Encoding', 'Cf-Ray': '9440de8bceb2a405-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964679&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zv9l3KMdFpC39H9%2Bm8nBziw5PCs%2BMAyQryOEZvm3Hac%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964679&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zv9l3KMdFpC39H9%2Bm8nBziw5PCs%2BMAyQryOEZvm3Hac%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '96', 'Ratelimit-Reset': '60', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'Cf-Cache-Status': 'MISS', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=13483&amp;min_rtt=13458&amp;rtt_var=5065&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=843&amp;delivery_rate=303165&amp;cwnd=229&amp;unsent_bytes=0&amp;cid=6d45f2cea897e87c&amp;ts=440&amp;x=0"'} 
+ body={} 
+ </msg>
+<msg time="2025-05-22T22:44:38.236388" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:38.236767" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/users/23</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=${status_code_desejado}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:37.753474" elapsed="0.483324"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.237399" level="INFO">Response: {}</msg>
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.236975" elapsed="0.000466"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.237648" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.237535" elapsed="0.000141"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.752698" elapsed="0.485020"/>
+</kw>
+<kw name="Validar se o status code é 404" owner="users_keywords">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == 404</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.238082" elapsed="0.000879"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.239273" level="INFO">Status code: 404</msg>
+<arg>Status code: ${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.239035" elapsed="0.000268"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.237900" elapsed="0.001442"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:37.752429" elapsed="0.487038"/>
+</test>
+<test id="s1-t3" name="Cenário 03: PUT Updates a user 200" line="17">
+<kw name="POST Endpoint /register" owner="register_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.240552" level="INFO">&amp;{payload} = { email=eve.holt@reqres.in | password=pistola }</msg>
+<var>&amp;{payload}</var>
+<arg>email=${email}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.240354" elapsed="0.000218"/>
+</kw>
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:38.240925" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:38.240776" elapsed="0.000247"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.240656" elapsed="0.000411"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:38.685465" level="INFO">POST Request : url=https://reqres.in/api/register 
+ path_url=/api/register 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '54'} 
+ body=b'{"email": "eve.holt@reqres.in", "password": "pistola"}' 
+ </msg>
+<msg time="2025-05-22T22:44:38.685548" level="INFO">POST Response : url=https://reqres.in/api/register 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 23 May 2025 01:44:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9440de8ece24af56-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964679&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zv9l3KMdFpC39H9%2Bm8nBziw5PCs%2BMAyQryOEZvm3Hac%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964679&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zv9l3KMdFpC39H9%2Bm8nBziw5PCs%2BMAyQryOEZvm3Hac%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '94', 'Ratelimit-Reset': '59', 'Etag': 'W/"24-4iP0za1geN2he+ohu8F0FhCjLks"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12613&amp;min_rtt=12560&amp;rtt_var=4816&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=940&amp;delivery_rate=314208&amp;cwnd=253&amp;unsent_bytes=0&amp;cid=5fd885013a84cdb4&amp;ts=403&amp;x=0"'} 
+ body={"id":4,"token":"QpwL5tke4Pnpja7X4"} 
+ </msg>
+<msg time="2025-05-22T22:44:38.685602" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:38.685976" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/register</arg>
+<arg>json=&amp;{payload}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.241124" elapsed="0.444882"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.686161" elapsed="0.000468"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.686872" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.686736" elapsed="0.000167"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.687276" level="INFO">${ID_USER} = 4</msg>
+<arg>${ID_USER}</arg>
+<arg>${response.json()["id"]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.686977" elapsed="0.000329"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.240180" elapsed="0.447173"/>
+</kw>
+<kw name="PUT Endpoint /users/id" owner="users_keywords">
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:38.687961" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:38.687812" elapsed="0.000253"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.687682" elapsed="0.000425"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-22T22:44:38.688337" level="INFO">&amp;{payload} = { name=morpheus | job=zion resident }</msg>
+<var>&amp;{payload}</var>
+<arg>name=morpheus</arg>
+<arg>job=zion resident</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.688210" elapsed="0.000146"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:39.151016" level="INFO">PUT Request : url=https://reqres.in/api/users/4 
+ path_url=/api/users/4 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '44'} 
+ body=b'{"name": "morpheus", "job": "zion resident"}' 
+ </msg>
+<msg time="2025-05-22T22:44:39.151109" level="INFO">PUT Response : url=https://reqres.in/api/users/4 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 23 May 2025 01:44:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cf-Ray': '9440de919e1cddeb-GRU', 'Server': 'cloudflare', 'Content-Encoding': 'gzip', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964680&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I0LTRjKfeswGghr%2F0SBXa4yH18Kt%2B9VfSjF%2BkkPDnDk%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964680&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I0LTRjKfeswGghr%2F0SBXa4yH18Kt%2B9VfSjF%2BkkPDnDk%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '92', 'Ratelimit-Reset': '59', 'Etag': 'W/"50-6DSMXI9g1SdLz/c0NDaI0OdKcMM"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Vary': 'Accept-Encoding', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12982&amp;min_rtt=12933&amp;rtt_var=4949&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=928&amp;delivery_rate=306099&amp;cwnd=211&amp;unsent_bytes=0&amp;cid=50214b64160a370d&amp;ts=420&amp;x=0"'} 
+ body={"name":"morpheus","job":"zion resident","updatedAt":"2025-05-23T01:44:40.241Z"} 
+ </msg>
+<msg time="2025-05-22T22:44:39.151173" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:39.151572" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/users/${ID_USER}</arg>
+<arg>json=&amp;{payload}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:38.688422" elapsed="0.463185"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.152183" level="INFO">Response: {'name': 'morpheus', 'job': 'zion resident', 'updatedAt': '2025-05-23T01:44:40.241Z'}</msg>
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.151772" elapsed="0.000453"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.152421" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.152309" elapsed="0.000139"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.687520" elapsed="0.464972"/>
+</kw>
+<kw name="Validar se atualizar o usuário foi bem sucedido" owner="users_keywords">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-22T22:44:39.153123" level="INFO">${updated_At} = 2025-05-23T01:44:40.241Z</msg>
+<var>${updated_At}</var>
+<arg>${response.json()}</arg>
+<arg>updatedAt</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.152838" elapsed="0.000303"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.153371" level="INFO">&amp;{response_update_esperado} = { name=morpheus | job=zion resident | updatedAt=2025-05-23T01:44:40.241Z }</msg>
+<var>&amp;{response_update_esperado}</var>
+<arg>name=morpheus</arg>
+<arg>job=zion resident</arg>
+<arg>updatedAt=${updated_At}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.153213" elapsed="0.000176"/>
+</kw>
+<kw name="Dictionary Should Contain Sub Dictionary" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>${response_update_esperado}</arg>
+<doc>Fails unless all items in ``dict2`` are found from ``dict1``.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.153456" elapsed="0.000286"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.153880" level="INFO">{'name': 'morpheus', 'job': 'zion resident', 'updatedAt': '2025-05-23T01:44:40.241Z'}</msg>
+<arg>${response_update_esperado}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.153808" elapsed="0.000099"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.152673" elapsed="0.001269"/>
+</kw>
+<kw name="Validar se o status code retornado é 200" owner="users_keywords">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == 200</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.154212" elapsed="0.000435"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.154934" level="INFO">Status code: 200</msg>
+<arg>Status code: ${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.154716" elapsed="0.000251"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.154078" elapsed="0.000924"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:38.239864" elapsed="0.915246"/>
+</test>
+<test id="s1-t4" name="Cenário 04: Deletes a user 204" line="23">
+<kw name="POST Endpoint /register" owner="register_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.156179" level="INFO">&amp;{payload} = { email=eve.holt@reqres.in | password=pistola }</msg>
+<var>&amp;{payload}</var>
+<arg>email=${email}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.155980" elapsed="0.000223"/>
+</kw>
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:39.156563" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:39.156414" elapsed="0.000257"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.156288" elapsed="0.000429"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:39.633056" level="INFO">POST Request : url=https://reqres.in/api/register 
+ path_url=/api/register 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '54'} 
+ body=b'{"email": "eve.holt@reqres.in", "password": "pistola"}' 
+ </msg>
+<msg time="2025-05-22T22:44:39.633263" level="INFO">POST Response : url=https://reqres.in/api/register 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 23 May 2025 01:44:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9440de949b86caee-GIG', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964680&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I0LTRjKfeswGghr%2F0SBXa4yH18Kt%2B9VfSjF%2BkkPDnDk%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964680&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=I0LTRjKfeswGghr%2F0SBXa4yH18Kt%2B9VfSjF%2BkkPDnDk%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '90', 'Ratelimit-Reset': '59', 'Etag': 'W/"24-4iP0za1geN2he+ohu8F0FhCjLks"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=19500&amp;min_rtt=19486&amp;rtt_var=7335&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2838&amp;recv_bytes=940&amp;delivery_rate=208184&amp;cwnd=33&amp;unsent_bytes=0&amp;cid=35f9f58ba27255ab&amp;ts=422&amp;x=0"'} 
+ body={"id":4,"token":"QpwL5tke4Pnpja7X4"} 
+ </msg>
+<msg time="2025-05-22T22:44:39.633325" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:39.633656" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/register</arg>
+<arg>json=&amp;{payload}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.156780" elapsed="0.476939"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.633864" elapsed="0.000442"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.634525" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.634406" elapsed="0.000148"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:39.634932" level="INFO">${ID_USER} = 4</msg>
+<arg>${ID_USER}</arg>
+<arg>${response.json()["id"]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.634624" elapsed="0.000341"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.155809" elapsed="0.479204"/>
+</kw>
+<kw name="DELETE Endpoint /users/id" owner="users_keywords">
+<kw name="Iniciar sessão" owner="variables">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:39.635634" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=${alias_base}</arg>
+<arg>url=${url_base}</arg>
+<arg>headers=${headers}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-22T22:44:39.635477" elapsed="0.000259"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.635349" elapsed="0.000429"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-05-22T22:44:40.079754" level="INFO">DELETE Request : url=https://reqres.in/api/users/4 
+ path_url=/api/users/4 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-05-22T22:44:40.079830" level="INFO">DELETE Response : url=https://reqres.in/api/users/4 
+ status=204, reason=No Content 
+ headers={'Date': 'Fri, 23 May 2025 01:44:41 GMT', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9440de97880900e2-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1747964681&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=tID2cA1AHZfqlMQREGiWHYCtZZMn4A6HQoYkZrDaTH4%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1747964681&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=tID2cA1AHZfqlMQREGiWHYCtZZMn4A6HQoYkZrDaTH4%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '88', 'Ratelimit-Reset': '58', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12965&amp;min_rtt=12924&amp;rtt_var=4930&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=864&amp;delivery_rate=307715&amp;cwnd=155&amp;unsent_bytes=0&amp;cid=3af6bb99d09329d6&amp;ts=403&amp;x=0"'} 
+ body=None 
+ </msg>
+<msg time="2025-05-22T22:44:40.079885" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-22T22:44:40.080224" level="INFO">${response} = &lt;Response [204]&gt;</msg>
+<var>${response}</var>
+<arg>alias=${alias_base}</arg>
+<arg>url=/users/${ID_USER}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-22T22:44:39.635840" elapsed="0.444425"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-22T22:44:40.080550" level="INFO">${response} = &lt;Response [204]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.080409" elapsed="0.000171"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.635180" elapsed="0.445444"/>
+</kw>
+<kw name="Validar se o usuário foi deletado com sucesso" owner="users_keywords">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:40.081067" level="INFO">&lt;Response [204]&gt;</msg>
+<arg>${response}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.080981" elapsed="0.000119"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2025-05-22T22:44:40.081463" level="INFO">Length is 0.</msg>
+<arg>${response.text}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.081162" elapsed="0.000332"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:40.081612" level="INFO">Response: Corpo da resposta vazio, conforme esperado ao deletar o usuário</msg>
+<arg>Response: Corpo da resposta vazio, conforme esperado ao deletar o usuário</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.081558" elapsed="0.000081"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:40.080809" elapsed="0.000910"/>
+</kw>
+<kw name="Validar se o status code é 204" owner="users_keywords">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == 204</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.081998" elapsed="0.000535"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-22T22:44:40.082827" level="INFO">Status code: 204</msg>
+<arg>Status code: ${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-22T22:44:40.082602" elapsed="0.000254"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:40.081857" elapsed="0.001035"/>
+</kw>
+<status status="PASS" start="2025-05-22T22:44:39.155500" elapsed="0.927522"/>
+</test>
+<doc>Cenários de testes para o endpoint /users</doc>
+<status status="PASS" start="2025-05-22T22:44:36.816096" elapsed="3.267465"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Users Tests" id="s1" pass="4" fail="0" skip="0">Users Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
