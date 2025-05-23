@@ -79,7 +79,38 @@ Validar se o status code retornado é 200
 
 
 
-###Cenário 04: Deletes a user 204
+###Cenário 04: PATCH Updates a user 200
+PATCH Endpoint /users/id
+    Iniciar sessão
+    &{payload}    Create Dictionary    
+    ...    name=raique
+    ...    job=o grande entregador
+    ${response}    PATCH On Session    
+    ...    alias=${alias_base}
+    ...    url=/users/${ID_USER}
+    ...    json=&{payload}
+    ...    headers=${headers}
+    Log    Response: ${response.json}
+    Set Test Variable    ${response}
+
+Validar se patch foi bem sucedido
+    ${atualizar}    Get From Dictionary    ${response.json()}    updatedAt
+    &{conferir_update}    Create Dictionary    
+    ...    name=raique
+    ...    job=o grande entregador
+    ...    updatedAt=${atualizar}
+    Dictionary Should Contain Sub Dictionary    
+    ...    ${response.json()}    
+    ...    ${conferir_update}
+        
+    Log    Atualização do usuário: ${conferir_update}
+Validar se status code é o esperado
+    Should Be True    ${response.status_code} == 200
+    Log    Status code: ${response.status_code}
+
+
+
+###Cenário 05: Deletes a user 204
 DELETE Endpoint /users/id
     Iniciar sessão
     ${response}    DELETE On Session    

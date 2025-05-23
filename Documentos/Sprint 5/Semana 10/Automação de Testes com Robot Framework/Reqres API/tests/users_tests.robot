@@ -20,7 +20,15 @@ Cenário 03: PUT Updates a user 200
     Validar se atualizar o usuário foi bem sucedido
     Validar se o status code retornado é 200
 
-Cenário 04: DELETE Deletes a user 204
+
+Cenário 04: PATCH Updates a user 200
+    POST Endpoint /register
+    PATCH Endpoint /users/id
+    Validar se patch foi bem sucedido
+    Validar se status code é o esperado
+
+
+Cenário 05: DELETE Deletes a user 204
     POST Endpoint /register
     DELETE Endpoint /users/id
     Validar se o usuário foi deletado com sucesso 
