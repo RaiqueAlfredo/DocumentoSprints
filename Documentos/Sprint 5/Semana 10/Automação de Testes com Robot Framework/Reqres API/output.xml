@@ -1,175 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-23T18:08:38.306920" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-27T12:44:47.213789" rpa="false" schemaversion="5">
 <suite id="s1" name="Users Tests" source="c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\tests\users_tests.robot">
-<test id="s1-t1" name="Cenário 04: PATCH Updates a user 200" line="24">
-<kw name="POST Endpoint /register" owner="register_keywords">
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-05-23T18:08:38.699249" level="INFO">&amp;{payload} = { email=eve.holt@reqres.in | password=pistola }</msg>
-<var>&amp;{payload}</var>
-<arg>email=${email}</arg>
-<arg>password=${password}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-05-23T18:08:38.698890" elapsed="0.001885"/>
-</kw>
-<kw name="Iniciar sessão" owner="variables">
+<kw name="Iniciar sessão" owner="base" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-05-23T18:08:38.701466" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-05-27T12:44:47.627713" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=${alias_base}</arg>
 <arg>url=${url_base}</arg>
 <arg>headers=${headers}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-05-23T18:08:38.701206" elapsed="0.000752"/>
+<status status="PASS" start="2025-05-27T12:44:47.627294" elapsed="0.001212"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:38.700975" elapsed="0.001095"/>
+<status status="PASS" start="2025-05-27T12:44:47.626639" elapsed="0.002029"/>
 </kw>
+<test id="s1-t1" name="Cenário 05: DELETE Deletes a user 204" line="29">
+<kw name="Payload Registrar Usuario Valido" owner="common">
+<kw name="Importar JSON Estatico" owner="common">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2025-05-27T12:44:47.630096" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_register.json"&gt;C:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_register.json&lt;/a&gt;'.</msg>
+<msg time="2025-05-27T12:44:47.631260" level="INFO">${arquivo} = {
+    "register_valido":{
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    },
+    "register_invalido":{
+        "email": "sydney@fife"
+    }
+}</msg>
+<var>${arquivo}</var>
+<arg>${EXECDIR}/support/fixtures/static/${nome_arquivo}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2025-05-27T12:44:47.629788" elapsed="0.001608"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-05-27T12:44:47.632044" level="INFO">${data} = {'register_valido': {'email': 'eve.holt@reqres.in', 'password': 'pistol'}, 'register_invalido': {'email': 'sydney@fife'}}</msg>
+<var>${data}</var>
+<arg>json.loads('''${arquivo}''')</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-05-27T12:44:47.631610" elapsed="0.000561"/>
+</kw>
+<return>
+<value>${data}</value>
+<status status="PASS" start="2025-05-27T12:44:47.632311" elapsed="0.000145"/>
+</return>
+<msg time="2025-05-27T12:44:47.632685" level="INFO">${json} = {'register_valido': {'email': 'eve.holt@reqres.in', 'password': 'pistol'}, 'register_invalido': {'email': 'sydney@fife'}}</msg>
+<var>${json}</var>
+<arg>json_register.json</arg>
+<status status="PASS" start="2025-05-27T12:44:47.629559" elapsed="0.003244"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-27T12:44:47.633328" level="INFO">${payload_register_200} = {'email': 'eve.holt@reqres.in', 'password': 'pistol'}</msg>
+<var>${payload_register_200}</var>
+<arg>${json["register_valido"]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-27T12:44:47.632952" elapsed="0.000448"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-05-27T12:44:47.633741" level="INFO">${payload_register_200} = {'email': 'eve.holt@reqres.in', 'password': 'pistol'}</msg>
+<arg>${payload_register_200}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-05-27T12:44:47.633523" elapsed="0.000342"/>
+</kw>
+<status status="PASS" start="2025-05-27T12:44:47.629304" elapsed="0.004660"/>
+</kw>
+<kw name="POST Endpoint /register" owner="register_keywords">
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2025-05-23T18:08:39.184135" level="INFO">POST Request : url=https://reqres.in/api/register 
+<msg time="2025-05-27T12:44:48.121177" level="INFO">POST Request : url=https://reqres.in/api/register 
  path_url=/api/register 
- headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '54'} 
- body=b'{"email": "eve.holt@reqres.in", "password": "pistola"}' 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '53'} 
+ body=b'{"email": "eve.holt@reqres.in", "password": "pistol"}' 
  </msg>
-<msg time="2025-05-23T18:08:39.184377" level="INFO">POST Response : url=https://reqres.in/api/register 
+<msg time="2025-05-27T12:44:48.122085" level="INFO">POST Response : url=https://reqres.in/api/register 
  status=200, reason=OK 
- headers={'Date': 'Fri, 23 May 2025 21:08:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '944787a9ed9301ab-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748034520&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=M9kMTZ0OcEaj8wmW%2BeC27qJ%2BB3vsGLVHd60%2FEtPi9jE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1748034520&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=M9kMTZ0OcEaj8wmW%2BeC27qJ%2BB3vsGLVHd60%2FEtPi9jE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '94', 'Ratelimit-Reset': '1', 'Etag': 'W/"24-4iP0za1geN2he+ohu8F0FhCjLks"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12978&amp;min_rtt=12872&amp;rtt_var=4903&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=940&amp;delivery_rate=316967&amp;cwnd=157&amp;unsent_bytes=0&amp;cid=ed24d638f243f29f&amp;ts=435&amp;x=0"'} 
+ headers={'Date': 'Tue, 27 May 2025 15:44:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9466a2c0dcb7622b-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748360689&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=8m4q67f0FJimfr5rNED%2FiIwyK%2FhFvtyJ1RbqkGYrHvE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1748360689&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=8m4q67f0FJimfr5rNED%2FiIwyK%2FhFvtyJ1RbqkGYrHvE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '94', 'Ratelimit-Reset': '40', 'Etag': 'W/"24-4iP0za1geN2he+ohu8F0FhCjLks"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12959&amp;min_rtt=12900&amp;rtt_var=4956&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2838&amp;recv_bytes=939&amp;delivery_rate=305069&amp;cwnd=236&amp;unsent_bytes=0&amp;cid=cf52c9e82151b8cd&amp;ts=429&amp;x=0"'} 
  body={"id":4,"token":"QpwL5tke4Pnpja7X4"} 
  </msg>
-<msg time="2025-05-23T18:08:39.184505" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-05-27T12:44:48.122315" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-05-23T18:08:39.184947" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-05-27T12:44:48.122894" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>alias=${alias_base}</arg>
 <arg>url=/register</arg>
-<arg>json=&amp;{payload}</arg>
+<arg>json=&amp;{payload_register_200}</arg>
 <arg>headers=${headers}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-05-23T18:08:38.702180" elapsed="0.482872"/>
+<status status="PASS" start="2025-05-27T12:44:47.634479" elapsed="0.488522"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-27T12:44:48.123727" level="INFO">Response: {'id': 4, 'token': 'QpwL5tke4Pnpja7X4'}</msg>
 <arg>Response: ${response.json()}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.185272" elapsed="0.000717"/>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-27T12:44:48.123221" elapsed="0.000622"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.186567" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-05-27T12:44:48.124229" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.186138" elapsed="0.000515"/>
+<status status="PASS" start="2025-05-27T12:44:48.124011" elapsed="0.000319"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.187419" level="INFO">${ID_USER} = 4</msg>
+<msg time="2025-05-27T12:44:48.125248" level="INFO">${ID_USER} = 4</msg>
 <arg>${ID_USER}</arg>
 <arg>${response.json()["id"]}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.186762" elapsed="0.000749"/>
+<status status="PASS" start="2025-05-27T12:44:48.124477" elapsed="0.000877"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:38.698278" elapsed="0.489324"/>
+<status status="PASS" start="2025-05-27T12:44:47.634263" elapsed="0.491195"/>
 </kw>
-<kw name="PATCH Endpoint /users/id" owner="users_keywords">
-<kw name="Iniciar sessão" owner="variables">
-<kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-05-23T18:08:39.188531" level="INFO">Creating Session using : alias=ReqRes, url=https://reqres.in/api, headers={'accept': 'application/json', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>alias=${alias_base}</arg>
-<arg>url=${url_base}</arg>
-<arg>headers=${headers}</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-05-23T18:08:39.188307" elapsed="0.000399"/>
-</kw>
-<status status="PASS" start="2025-05-23T18:08:39.188122" elapsed="0.000673"/>
-</kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.189092" level="INFO">&amp;{payload} = { name=raique | job=o grande entregador }</msg>
-<var>&amp;{payload}</var>
-<arg>name=raique</arg>
-<arg>job=o grande entregador</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.188900" elapsed="0.000624"/>
-</kw>
-<kw name="PATCH On Session" owner="RequestsLibrary">
-<msg time="2025-05-23T18:08:39.642590" level="INFO">PATCH Request : url=https://reqres.in/api/users/4 
+<kw name="DELETE Endpoint /users/id" owner="users_keywords">
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-05-27T12:44:48.554215" level="INFO">DELETE Request : url=https://reqres.in/api/users/4 
  path_url=/api/users/4 
- headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '48'} 
- body=b'{"name": "raique", "job": "o grande entregador"}' 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'x-api-key': 'reqres-free-v1', 'Content-Length': '0'} 
+ body=None 
  </msg>
-<msg time="2025-05-23T18:08:39.642833" level="INFO">PATCH Response : url=https://reqres.in/api/users/4 
- status=200, reason=OK 
- headers={'Date': 'Fri, 23 May 2025 21:08:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cf-Ray': '944787aceb3e7810-GRU', 'Server': 'cloudflare', 'Content-Encoding': 'gzip', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748034521&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=LKJkkJyYrUsNzgh%2FZGJgu0SLI6eerbtgFRjyn4FzSmY%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1748034521&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=LKJkkJyYrUsNzgh%2FZGJgu0SLI6eerbtgFRjyn4FzSmY%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '98', 'Ratelimit-Reset': '60', 'Etag': 'W/"54-cmB4eSYnaAzRDwEbzJqWa1Wz7VU"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=13070&amp;min_rtt=13025&amp;rtt_var=4975&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2837&amp;recv_bytes=934&amp;delivery_rate=304705&amp;cwnd=191&amp;unsent_bytes=0&amp;cid=de652418c3046f3f&amp;ts=409&amp;x=0"'} 
- body={"name":"raique","job":"o grande entregador","updatedAt":"2025-05-23T21:08:41.401Z"} 
+<msg time="2025-05-27T12:44:48.554905" level="INFO">DELETE Response : url=https://reqres.in/api/users/4 
+ status=204, reason=No Content 
+ headers={'Date': 'Tue, 27 May 2025 15:44:49 GMT', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Cf-Ray': '9466a2c38875622b-GRU', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748360689&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=8m4q67f0FJimfr5rNED%2FiIwyK%2FhFvtyJ1RbqkGYrHvE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1748360689&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=8m4q67f0FJimfr5rNED%2FiIwyK%2FhFvtyJ1RbqkGYrHvE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '92', 'Ratelimit-Reset': '40', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=12986&amp;min_rtt=12900&amp;rtt_var=3771&amp;sent=9&amp;recv=9&amp;lost=0&amp;retrans=0&amp;sent_bytes=4622&amp;recv_bytes=1206&amp;delivery_rate=309677&amp;cwnd=239&amp;unsent_bytes=0&amp;cid=cf52c9e82151b8cd&amp;ts=863&amp;x=0"'} 
+ body=None 
  </msg>
-<msg time="2025-05-23T18:08:39.643112" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-05-27T12:44:48.555104" level="INFO">C:\Users\raiqu\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-05-23T18:08:39.643525" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-05-27T12:44:48.555541" level="INFO">${response} = &lt;Response [204]&gt;</msg>
 <var>${response}</var>
 <arg>alias=${alias_base}</arg>
 <arg>url=/users/${ID_USER}</arg>
-<arg>json=&amp;{payload}</arg>
 <arg>headers=${headers}</arg>
-<doc>Sends a PATCH request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.189649" elapsed="0.453962"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.644198" level="INFO">Response: &lt;bound method Response.json of &lt;Response [200]&gt;&gt;</msg>
-<arg>Response: ${response.json}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.643796" elapsed="0.000500"/>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-27T12:44:48.126577" elapsed="0.429083"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.644572" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-05-27T12:44:48.556139" level="INFO">${response} = &lt;Response [204]&gt;</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.644414" elapsed="0.000237"/>
+<status status="PASS" start="2025-05-27T12:44:48.555890" elapsed="0.000348"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:39.187889" elapsed="0.456847"/>
+<status status="PASS" start="2025-05-27T12:44:48.125867" elapsed="0.430478"/>
 </kw>
-<kw name="Validar se patch foi bem sucedido" owner="users_keywords">
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-05-23T18:08:39.645675" level="INFO">${atualizar} = 2025-05-23T21:08:41.401Z</msg>
-<var>${atualizar}</var>
-<arg>${response.json()}</arg>
-<arg>updatedAt</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.645293" elapsed="0.000462"/>
-</kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.646109" level="INFO">&amp;{conferir_update} = { name=raique | job=o grande entregador | updatedAt=2025-05-23T21:08:41.401Z }</msg>
-<var>&amp;{conferir_update}</var>
-<arg>name=raique</arg>
-<arg>job=o grande entregador</arg>
-<arg>updatedAt=${atualizar}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.645876" elapsed="0.000306"/>
-</kw>
-<kw name="Dictionary Should Contain Sub Dictionary" owner="Collections">
-<arg>${response.json()}</arg>
-<arg>${conferir_update}</arg>
-<doc>Fails unless all items in ``dict2`` are found from ``dict1``.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.646320" elapsed="0.000394"/>
+<kw name="Validar se o usuário foi deletado com sucesso" owner="users_keywords">
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2025-05-27T12:44:48.557473" level="INFO">Length is 0.</msg>
+<arg>${response.text}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2025-05-27T12:44:48.557004" elapsed="0.000593"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.647034" level="INFO">Atualização do usuário: {'name': 'raique', 'job': 'o grande entregador', 'updatedAt': '2025-05-23T21:08:41.401Z'}</msg>
-<arg>Atualização do usuário: ${conferir_update}</arg>
+<msg time="2025-05-27T12:44:48.557884" level="INFO">Response: Corpo da resposta vazio, conforme esperado ao deletar o usuário</msg>
+<arg>Response: Corpo da resposta vazio, conforme esperado ao deletar o usuário</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.646849" elapsed="0.000295"/>
+<status status="PASS" start="2025-05-27T12:44:48.557747" elapsed="0.000235"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:39.645045" elapsed="0.002229"/>
+<status status="PASS" start="2025-05-27T12:44:48.556708" elapsed="0.001391"/>
 </kw>
-<kw name="Validar se status code é o esperado" owner="users_keywords">
+<kw name="Validar Status Code &quot;204&quot;" owner="common" source_name="Validar Status Code &quot;${statuscode}&quot;">
 <kw name="Should Be True" owner="BuiltIn">
-<arg>${response.status_code} == 200</arg>
+<arg>${response.status_code} == ${statuscode}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.647828" elapsed="0.000860"/>
+<status status="PASS" start="2025-05-27T12:44:48.558702" elapsed="0.000711"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-23T18:08:39.649104" level="INFO">Status code: 200</msg>
-<arg>Status code: ${response.status_code}</arg>
+<msg time="2025-05-27T12:44:48.559728" level="INFO">Status Code: 204</msg>
+<arg>Status Code: ${statuscode}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-23T18:08:39.648823" elapsed="0.000368"/>
+<status status="PASS" start="2025-05-27T12:44:48.559569" elapsed="0.000263"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:39.647579" elapsed="0.001696"/>
+<status status="PASS" start="2025-05-27T12:44:48.558426" elapsed="0.001500"/>
 </kw>
-<status status="PASS" start="2025-05-23T18:08:38.697547" elapsed="0.952003"/>
+<status status="PASS" start="2025-05-27T12:44:47.628799" elapsed="0.931400"/>
 </test>
 <doc>Cenários de testes para o endpoint /users</doc>
-<status status="PASS" start="2025-05-23T18:08:38.310715" elapsed="1.339821"/>
+<status status="PASS" start="2025-05-27T12:44:47.217551" elapsed="1.343641"/>
 </suite>
 <statistics>
 <total>
@@ -182,5 +182,10 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2025-05-27T12:44:47.615248" level="WARN">Error in file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\common\common.resource' on line 15: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-05-27T12:44:47.620062" level="ERROR">Error in file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\base.robot' on line 10: Parsing JSON resource file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_login.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'login_valido'</msg>
+<msg time="2025-05-27T12:44:47.622410" level="ERROR">Error in file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\base.robot' on line 11: Parsing JSON resource file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_register.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'register_valido'</msg>
+<msg time="2025-05-27T12:44:47.623617" level="ERROR">Error in file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\base.robot' on line 12: Parsing JSON resource file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_user_patch.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'patch'</msg>
+<msg time="2025-05-27T12:44:47.624733" level="ERROR">Error in file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\base.robot' on line 13: Parsing JSON resource file 'c:\Users\raiqu\Desktop\Nero\Estágio\Documentos das Sprints\Documentos\Sprint 5\Semana 10\Automação de Testes com Robot Framework\Reqres API\support\fixtures\static\json_user_put.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'put'</msg>
 </errors>
 </robot>

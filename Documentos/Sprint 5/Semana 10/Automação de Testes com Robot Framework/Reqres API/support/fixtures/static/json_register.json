@@ -1,0 +1,9 @@
+{
+    "register_valido":{
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    },
+    "register_invalido":{
+        "email": "sydney@fife"
+    }
+}

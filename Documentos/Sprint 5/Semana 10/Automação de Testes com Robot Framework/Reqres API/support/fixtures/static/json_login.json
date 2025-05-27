@@ -1,0 +1,9 @@
+{
+    "login_valido":{
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    },
+    "login_invalido":{
+        "email": "eve.holt@reqres.in"
+    }
+}

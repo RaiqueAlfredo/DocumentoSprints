@@ -1,9 +1,9 @@
 *** Settings ***
 Documentation    Cenários de testes para o endpoint /logout
-Resource         ../resources/logout_keywords.resource
-
+Resource         ../keywords/logout_keywords.resource
+Suite Setup      Iniciar sessão
 
 *** Test Cases ***
 Cenário 01: POST Ends a session 200
     POST Endpoint /logout
-    Validar se o status code é 200
+    Validar Status Code "200"
