@@ -5,14 +5,15 @@ Library          RequestsLibrary
 Library          Collections
 Library          String
 Library          OperatingSystem
+Library          jsonschema
 Resource         ../support/common/common.resource
 Resource         ../support/variables/reqres_variaveis.resource
-Resource         ../support/fixtures/static/json_login.json
-Resource         ../support/fixtures/static/json_register.json
-Resource         ../support/fixtures/static/json_user_patch.json
-Resource         ../support/fixtures/static/json_user_put.json
 
 
 *** Keywords ***
 Iniciar sessão
     Create Session    alias=${alias_base}    url=${url_base}    headers=${headers}
+
+Finalizar sessão
+    Delete All Sessions
+    Log    Todas as sessões foram encerradas

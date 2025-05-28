@@ -12,7 +12,10 @@ GET Endpoint /unknown
     Log    Response: ${response.json()}
     Set Test Variable    ${response}
 Validar se retornou lista correta
-    Dictionary Should Contain Key    ${response.json()}    data
+    [Documentation]    Verifica se a resposta contém as chaves 'data' e 'support' e registra seus valores
+    Dictionary Should Contain Key    ${response.json()}    data    
     Dictionary Should Contain Key    ${response.json()}    support
-    Log    data: ${response.json()["data"]}
-    Log    support: ${response.json()["support"]}
+    ${data_length}   Get Length    ${response.json()["data"]}
+    ${sup_length}    Get Length    ${response.json()["support"]}
+    Log    Número de itens em data: ${data_length}
+    Log    Número de itens em data: ${sup_length}

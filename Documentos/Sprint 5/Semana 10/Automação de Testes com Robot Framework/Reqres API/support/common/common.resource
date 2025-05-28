@@ -12,7 +12,14 @@ Importar JSON Estatico
     [Arguments]   ${nome_arquivo}
     ${arquivo}    Get File  ${EXECDIR}/support/fixtures/static/${nome_arquivo}
     ${data}       Evaluate    json.loads('''${arquivo}''')    json
-    [return]      ${data}
+    RETURN      ${data}
+
+Validar Esquema JSON
+    [Arguments]         ${response}     ${schema_file}
+    ${schema}=          Get File        ${EXECDIR}/support/schemas/${schema_file}
+    ${schema_json}=     Evaluate        json.loads('''${schema}''')    json
+    ${response_json}=   Set Variable    ${response.json()}
+    ${is_valid}=        Evaluate        jsonschema.validate(${response_json}, ${schema_json})    jsonschema
 
 Payload Login Usuario Valido
     ${json}                Importar JSON Estatico    json_login.json
