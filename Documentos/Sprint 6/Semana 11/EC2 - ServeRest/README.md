@@ -1,5 +1,7 @@
 *Passo a Passo seguido para subir o EC2 e a ServeRest em uma máquina virtual cloud*
+
 Como Subir a máquina virtual EC2 na cloud:
+
     1 - Acessei o link: https://academy-compass.awsapps.com/start#/
         a - Eu já tinha a conta criada com o e-mail da compasso, onde foi usado para estudar sobre "AI e GenAI com AWS"
 
