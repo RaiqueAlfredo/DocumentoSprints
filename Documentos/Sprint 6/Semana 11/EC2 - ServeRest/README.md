@@ -84,6 +84,7 @@ Como Subir a máquina virtual EC2 na cloud:
             Apareceu no terminal "Ok to proceed? (y)", digitei y e dei enter
 
 Subindo a ServeRest na máquina virtual EC2:
+
     20 - No terminal aparece o link para testar o funcionamento, ao acessar o link no navegador, deu erro por contar do "localhost". 
         a - Então eu volto na página que estava de "Conectar-se à instância"
         b - Vou na opção "Conexão de instância do EC2" e copio o "Endereço IPv4 público"
