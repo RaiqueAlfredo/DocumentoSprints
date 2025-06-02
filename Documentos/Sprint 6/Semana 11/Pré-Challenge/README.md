@@ -1,6 +1,7 @@
 *Resumo das Mudanças no Plano de Testes da API*
 
 Mudanças Realizadas:
+
     - Remoção de Cenários de Testes
     - Renomeação de cenários com IDs atualizados.
     - Matriz de risco atualizada.
