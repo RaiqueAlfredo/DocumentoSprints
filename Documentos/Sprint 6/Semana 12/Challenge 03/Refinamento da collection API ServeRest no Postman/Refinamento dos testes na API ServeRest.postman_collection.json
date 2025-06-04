@@ -1,0 +1,2541 @@
+{
+	"info": {
+		"_postman_id": "6b79d62f-9a8d-4547-894e-d97d8172f650",
+		"name": "API ServeRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44548099",
+		"_collection_link": "https://raique-2993386.postman.co/workspace/Testes~05e0aeb5-6e95-4045-a001-61381967cc88/collection/44548099-6b79d62f-9a8d-4547-894e-d97d8172f650?action=share&source=collection_link&creator=44548099"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "CTs para US 002 - [API] Login",
+					"item": [
+						{
+							"name": "CT01 - Login com Credenciais Válidas",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Response time is less than 2seg\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+													"});\r",
+													"\r",
+													"if (pm.request.method == 'POST' ){\r",
+													"    pm.test(\"Successful POST request\", function () {\r",
+													"        pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+													"    })\r",
+													"};\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas (Status 200)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT02 - Tentar Login com E-mail Não Cadastrado",
+							"item": [
+								{
+									"name": "Login com E-mail Não Cadastrado (Status 401)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"ra@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT03 - Testar Expiração do Token Após 10 Minutos",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raico1@qa.com.br\",\r\n  \"password\": \"testando1\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raico1@qa.com.br\",\r\n  \"password\": \"testando1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"04 teste\",\r\n  \"preco\": 700,\r\n  \"descricao\": \"qa\",\r\n  \"quantidade\": 6\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT04 - Tentar Login com Senha Inválida",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"ra1@qa.com.br\",\r\n  \"password\": \"testando\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com Senha Inválida (Status 401)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"ra1@qa.com.br\",\r\n  \"password\": \"OI\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT05 - Tentar Login Sem Preencher o Campo de E-mail",
+							"item": [
+								{
+									"name": "Login sem e-mail (Status 400)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT06 - Tentar Login Sem Preencher o Campo de Senha",
+							"item": [
+								{
+									"name": "Login sem senha (Status 400)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"fulano@qa.com\",\r\n  \"password\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					],
+					"description": "Onde eu faço login.  \nLembrando que: \"A duração do token retornado em authorization é de 600 segundos (10 minutos).\""
+				}
+			],
+			"description": "\"Autentique o seu usuário para montar um carrinho e, se for administrador, gerenciar os produtos.\""
+		},
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "CTs para US 001 - [API] Usuários",
+					"item": [
+						{
+							"name": "CT01 - Criação de Usuário com Todos os Campos Válidos",
+							"item": [
+								{
+									"name": "Cadastrar usuário com Todos os Campos Válidos (Status 201)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"ra1@qa.com\",\r\n  \"password\": \"teste123\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT02 - Tentar Criar Usuário com E-mail Duplicado",
+							"item": [
+								{
+									"name": "Cadastrar usuário com E-mail Duplicado (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"ra1@qa.com\",\r\n  \"password\": \"teste123\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT03 - Criar Usuário com E-mail Inválido",
+							"item": [
+								{
+									"name": "Cadastrar usuário com E-mail Inválido (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"userSemEmail\",\r\n  \"password\": \"testes\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT04 - Criar Usuário com E-mail de Provedor Restrito",
+							"item": [
+								{
+									"name": "Cadastrar usuário com E-mail de Provedor Restrito gmail (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique01@gmail.com\",\r\n  \"password\": \"testando123\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar usuário com E-mail de Provedor Restrito hotmail (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique01@hotmail.com\",\r\n  \"password\": \"testando123\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT05 - Criar Usuário com Senha Fora dos Limites de Caracteres",
+							"item": [
+								{
+									"name": "Cadastrar usuário com Senha Fora dos Limites de Caracteres (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique001@qa.com.br\",\r\n  \"password\": \"1234\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar usuário com Senha Fora dos Limites de Caracteres (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique002@qa.com.br\",\r\n  \"password\": \"12345678910\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT06 - Criar Usuário com Campo “nome” Vazio ou Ausente",
+							"item": [
+								{
+									"name": "Cadastrar usuário com campo \"nome\" vazio ou ausente (Status 400)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"\",\r\n  \"email\": \"raique01@qa.com\",\r\n  \"password\": \"testes1\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT07 - Criar Usuário sem Campo ADMINISTRADOR",
+							"item": [
+								{
+									"name": "Cadastrar usuário sem campo administrador (Status 201)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique03@qa.com\",\r\n  \"password\": \"testes2\",\r\n  \"administrador\": \"false\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT08 - Buscar Usuário por ID Inexistente",
+							"item": [
+								{
+									"name": "Buscar usuário por ID (Status 400)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/usuarios/{{usuario-id-inexistente}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios",
+												"{{usuario-id-inexistente}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT09 - Atualizar Usuário Existente com Dados Válidos",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"ra00@qa.com\",\r\n  \"password\": \"test1\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Usuário Existente com Dados Válidos (Status 200)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"ra01@qa.com\",\r\n  \"password\": \"test2\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios/{{editar-usuario-ct09}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios",
+												"{{editar-usuario-ct09}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT10 - Atualizar Usuário com ID Inexistente",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique@qa.com\",\r\n  \"password\": \"testes1\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Usuário com ID Inexistente (Status 201)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique03@2.com\",\r\n  \"password\": \"tes123\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios/{{editar-usuario-ct10}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios",
+												"{{editar-usuario-ct10}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT11 - Tentar Atualizar Usuário com E-mail Duplicado",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique04@qa.com\",\r\n  \"password\": \"testes3\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Usuário com E-mail Duplicado (Status 400)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique04@qa.com\",\r\n  \"password\": \"testes3\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios/{{editar-usuario-ct11}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios",
+												"{{editar-usuario-ct11}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT12 - Atualizar Usuário sem Preencher Todos os Campos Obrigatórios",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique05@qa.com\",\r\n  \"password\": \"testes3\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Usuário sem Preencher Todos os Campos Obrigatórios (Status 400)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"\",\r\n  \"email\": \"\",\r\n  \"password\": \"\",\r\n  \"administrador\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios/{{editar-usuario-ct12}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios",
+												"{{editar-usuario-ct12}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			],
+			"description": "\"Gerencie os usuários, consulte dados para login e cadastre administrador.\""
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "CTs para US 003 - [API] Produtos",
+					"item": [
+						{
+							"name": "CT01 - Criar Produto com Todos os Campos Válidos",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos (Status 201)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"05 teste\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"testes\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT02 - Tentar Criar Produto com Nome Duplicado",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Nome Duplicado (Status 400)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"05 teste\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"testes\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT03 - Criar Produto com Campos Obrigatórios Ausentes",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Campos Obrigatórios Ausentes (Status 400)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"\",\r\n  \"preco\": 10,\r\n  \"descricao\": \"\",\r\n  \"quantidade\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT04 - Atualizar Produto Existente com Dados Válidos",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"06 teste\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"teste0\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Produto Existente com Dados Válidos (Status 200)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"07 teste\",\r\n  \"preco\": 60,\r\n  \"descricao\": \"teste1\",\r\n  \"quantidade\": 15\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos/{{editar-produto-ct04}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{editar-produto-ct04}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT05 - Tentar Atualizar Produto com ID Inexistente",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Produto com ID Inexistente (Status 201)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"10 teste\",\r\n  \"preco\": 70,\r\n  \"descricao\": \"teste2\",\r\n  \"quantidade\": 20\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos/{{editar-produto-ct05}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{editar-produto-ct05}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT06 - Tentar Atualizar Produto com Nome Duplicado",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"010 teste\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"teste0\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Produto com Nome Duplicado (Status 400)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"010 teste\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"teste0\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos/{{editar-produto-ct06}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{editar-produto-ct06}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT07 - Excluir Produto Existente que Não Está Associado a Carrinhos",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test1\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"teste0\",\r\n  \"quantidade\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Excluir Produto Existente que Não Está Associado a Carrinhos (Status 200)",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/produtos/{{delete-produto-ct07}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{delete-produto-ct07}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT08 - Tentar Excluir Produto que Está Associado a Carrinhos",
+							"item": [
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test2\",\r\n  \"preco\": 40,\r\n  \"descricao\": \"teste1\",\r\n  \"quantidade\": 15\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar carrinho",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"produtos\": [\r\n    {\r\n      \"idProduto\": \"6ZGiOMlARvSeRYcM\",\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carrinhos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Excluir Produto que Está Associado a Carrinhos (Status 400)",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/produtos/{{delete-produto-ct08}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{delete-produto-ct08}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT09 - Tentar Realizar Qualquer Ação na Rota de Produtos sem Autenticação",
+							"item": [
+								{
+									"name": "Cadastrar produto",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test3\",\r\n  \"preco\": 40,\r\n  \"descricao\": \"teste02\",\r\n  \"quantidade\": 500\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Listar produtos cadastrados",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/produtos?_id=0DfkpOt9y9xfs7tN&nome=Ergonomic Marble Chicken&preco=470&descricao=Mouse&quantidade=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "_id",
+													"value": "0DfkpOt9y9xfs7tN"
+												},
+												{
+													"key": "nome",
+													"value": "Ergonomic Marble Chicken"
+												},
+												{
+													"key": "preco",
+													"value": "470"
+												},
+												{
+													"key": "descricao",
+													"value": "Mouse"
+												},
+												{
+													"key": "quantidade",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Buscar produto por ID",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/produtos/{{produto-ct09}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{produto-ct09}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar Produto",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Teste05\",\r\n  \"preco\": 100,\r\n  \"descricao\": \"teste10\",\r\n  \"quantidade\": 50\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos/{{produto-ct09}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{produto-ct09}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Excluir Produto",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/produtos/{{delete-produto-ct09}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos",
+												"{{delete-produto-ct09}}"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"auth": {
+								"type": "noauth"
+							},
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											""
+										]
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"description": "\"Consulte produtos cadastrados ou, como administrador, gerencie os produtos da loja.\""
+		},
+		{
+			"name": "Carrinhos",
+			"item": [
+				{
+					"name": "CTs para US 004 - [API] Carrinhos",
+					"item": [
+						{
+							"name": "CT01 - Cadastrar um carrinho com sucesso",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique1@qa.com.br\",\r\n  \"password\": \"testando\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test3\",\r\n  \"preco\": 50,\r\n  \"descricao\": \"teste2\",\r\n  \"quantidade\": 25\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar carrinho (Status 201)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"produtos\": [\r\n    {\r\n      \"idProduto\": \"{{produto-carrinho-ct01}}\",\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carrinhos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT02 - Tentar cadastrar carrinho com condições inválidas",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique2@qa.com.br\",\r\n  \"password\": \"test1\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique2@qa.com.br\",\r\n  \"password\": \"test1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test4\",\r\n  \"preco\": 60,\r\n  \"descricao\": \"teste3\",\r\n  \"quantidade\": 35\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar carrinho com condições inválidas (Status 400)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"produtos\": [\r\n    {\r\n      \"idProduto\": \"{{produto-carrinho-ct02}}\",\r\n      \"quantidade\": 0\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carrinhos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT03 - Tentar cadastrar um carrinho sem token",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique3@qa.com.br\",\r\n  \"password\": \"test2\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique3@qa.com.br\",\r\n  \"password\": \"test2\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar produto com Todos os Campos Válidos",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"test5\",\r\n  \"preco\": 70,\r\n  \"descricao\": \"teste4\",\r\n  \"quantidade\": 45\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/produtos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"produtos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cadastrar carrinho sem token (Status 401)",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"produtos\": [\r\n    {\r\n      \"idProduto\": \"{{produto-carrinho-ct03}}\",\r\n      \"quantidade\": 1\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carrinhos",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT04 - Tentar buscar carrinho com ID inexistente",
+							"item": [
+								{
+									"name": "Buscar carrinho com ID inexistente (Status 400)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carrinhos/{{carrinho-id-ct04}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos",
+												"{{carrinho-id-ct04}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT05 - Tentar concluir compra sem carrinho ativo",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique4@qa.com.br\",\r\n  \"password\": \"test3\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique4@qa.com.br\",\r\n  \"password\": \"test3\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Concluir compra sem carrinho ativo (Status 200)",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carrinhos/concluir-compra",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos",
+												"concluir-compra"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CT06 - Tentar cancelar compra sem token ou com token inválido",
+							"item": [
+								{
+									"name": "Cadastrar usuário",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"nome\": \"Raique\",\r\n  \"email\": \"raique5@qa.com.br\",\r\n  \"password\": \"test4\",\r\n  \"administrador\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/usuarios",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"usuarios"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Login com credenciais válidas Copy",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"raique5@qa.com.br\",\r\n  \"password\": \"test4\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cancelar compra sem token ou com token inválido (Status 401)",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carrinhos/cancelar-compra",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carrinhos",
+												"cancelar-compra"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			],
+			"description": "\"Consulte os carrinhos cadastrados, faça um para o seu usuário e, no final, desista da compra pois estava só dando uma olhadinha.\""
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Authorization}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "usuario-id-inexistente",
+			"value": "abcdefghijklmnop",
+			"type": "string"
+		},
+		{
+			"key": "editar-usuario-ct09",
+			"value": "eVpQLktwpf4AIMjW",
+			"type": "string"
+		},
+		{
+			"key": "editar-usuario-ct10",
+			"value": "qrstuvwxyzabcdef",
+			"type": "string"
+		},
+		{
+			"key": "editar-usuario-ct11",
+			"value": "97FiKATiiLVcZZ7I",
+			"type": "string"
+		},
+		{
+			"key": "editar-usuario-ct12",
+			"value": "FCHKj9y213Vd35DP",
+			"type": "string"
+		},
+		{
+			"key": "editar-produto-ct04",
+			"value": "OvgHxESIzJ6p0c8c",
+			"type": "string"
+		},
+		{
+			"key": "editar-produto-ct05",
+			"value": "1234567887654321",
+			"type": "string"
+		},
+		{
+			"key": "editar-produto-ct06",
+			"value": "tORjDrpvvZFRgEtu",
+			"type": "string"
+		},
+		{
+			"key": "delete-produto-ct07",
+			"value": "0MN00NFfTrEOBmKq",
+			"type": "string"
+		},
+		{
+			"key": "produto-ct08",
+			"value": "6ZGiOMlARvSeRYcM",
+			"type": "string"
+		},
+		{
+			"key": "delete-produto-ct08",
+			"value": "6ZGiOMlARvSeRYcM",
+			"type": "string"
+		},
+		{
+			"key": "produto-ct09",
+			"value": "0DfkpOt9y9xfs7tN",
+			"type": "string"
+		},
+		{
+			"key": "delete-produto-ct09",
+			"value": "0DfkpOt9y9xfs7tN",
+			"type": "string"
+		},
+		{
+			"key": "produto-carrinho-ct01",
+			"value": "A0UjiYsMCnD6svF8",
+			"type": "string"
+		},
+		{
+			"key": "produto-carrinho-ct02",
+			"value": "qA9YKBAOFDgADboV",
+			"type": "string"
+		},
+		{
+			"key": "produto-carrinho-ct03",
+			"value": "PPdMOsTnttiPE7b9",
+			"type": "string"
+		},
+		{
+			"key": "carrinho-id-ct04",
+			"value": "8765432112345678",
+			"type": "string"
+		}
+	]
+}
