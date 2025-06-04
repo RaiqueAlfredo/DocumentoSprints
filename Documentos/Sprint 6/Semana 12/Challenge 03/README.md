@@ -1,0 +1,22 @@
+*O que foi realizado no challenge ao longo da semana*
+
+*No Pré-Challenge:*
+
+    - Remoção de Cenários de Testes
+    - Renomeação de cenários com IDs atualizados.
+    - Matriz de risco atualizada.
+    - Prioridade de execução ajustada.
+    - Testes candidatos à automação atualizados.
+    - Cobertura de testes aprimorada, corrigindo inconsistências anteriores.
+
+
+*Dia 01:*
+
+    - Migração dos cenários de testes para o Jira usando o QAlity
+
+
+*Dia 02:*
+
+    - Melhoria na estrutura de testes no postman
+    - Refinamento nos testes do postman
+    - Atualização da cobertura de testes
