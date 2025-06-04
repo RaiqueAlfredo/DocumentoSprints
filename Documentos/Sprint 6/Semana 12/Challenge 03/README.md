@@ -18,5 +18,5 @@
 *Dia 02:*
 
     - Melhoria na estrutura de testes no postman
-    - Refinamento nos testes do postman
+    - Refinamento no fluxo de testes do postman
     - Atualização da cobertura de testes
