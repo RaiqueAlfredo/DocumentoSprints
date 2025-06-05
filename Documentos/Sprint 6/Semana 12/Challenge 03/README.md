@@ -2,7 +2,7 @@
 
 *No Pré-Challenge:*
 
-    - Remoção de Cenários de Testes
+    - Remoção de Cenários de Testes.
     - Renomeação de cenários com IDs atualizados.
     - Matriz de risco atualizada.
     - Prioridade de execução ajustada.
@@ -12,11 +12,18 @@
 
 *Dia 01:*
 
-    - Migração dos cenários de testes para o Jira usando o QAlity
+    - Migração dos cenários de testes para o Jira usando o QAlity.
 
 
 *Dia 02:*
 
-    - Melhoria na estrutura de testes no postman
-    - Refinamento no fluxo de testes do postman
-    - Atualização da cobertura de testes
+    - Melhoria na estrutura de testes no postman.
+    - Refinamento no fluxo de testes do postman.
+    - Atualização da cobertura de testes.
+
+*Dia 03*:
+ 
+    - Refinei os testes candidatos à automação.
+    - Executei os testes no postman:
+        - Relatei os resultados dos testes no Cycle Test.
+    - Refinei cenários de teste mapeados.
