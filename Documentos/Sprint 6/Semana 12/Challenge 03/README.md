@@ -27,3 +27,7 @@
     - Executei os testes no postman:
         - Relatei os resultados dos testes no Cycle Test.
     - Refinei cenários de teste mapeados.
+
+*Dia 04*:
+
+    - Configurei e testei todos os cenários candidatos à automação no Robot Framework.
