@@ -1,0 +1,14 @@
+{
+    "user_email_invalido":{
+        "nome": "Raique2",
+        "email": "userSemEmail",
+        "password": "teste3",
+        "administrador": "true"
+    },
+    "user_nome_vazio":{
+        "nome": "",
+        "email": "testeEmail@qa.com",
+        "password": "teste4",
+        "administrador": "true"
+    }
+}
