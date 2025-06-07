@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Keywords para ações no endpoint /usuarios
 Resource         ../support/base.robot
-Library    json
 
 *** Keywords ***
 ###US001-CT01: Criar usuário com todos os campos válidos
