@@ -1,22 +1,22 @@
 # Repositório Challenge
----
 ## Sobre o Repositório:
----
 Este repositório foi criado como parte do estágio na Compass UOL, com o objetivo de guardar todos os documentos necessários para a conclusão do Challenge 03 realizado na semana 12.
-Inclui:
-    - Plano de Testes refinado.
-        - Arquivo detalhando todas as mudanças de acordo com o dia.
-    - Collection do Postman refinada.
-        - Execução dos cenários de testes manualmente dentro do Postman.
-        - Resultados dos testes relatados dentro de cada cycle test no Jira.
-        - Cobertura dos testes manuais
-    - Criação dos testes candidatos à automação do plano de testes dentro do Robot Framework.
-        - Execução dos cenários automatizados.
-        - Resultados dos testes relatados.
-        - Cobertura dos testes automatizados.
 
-## Challenge ao longo da semana
----
+Dentro do repositório está incluso:
+
+    * Plano de Testes refinado.
+        * Arquivo detalhando todas as mudanças de acordo com o dia.
+    * Collection do Postman refinada.
+        * Execução dos cenários de testes manualmente dentro do Postman.
+        * Resultados dos testes relatados dentro de cada cycle test no Jira.
+        * Cobertura dos testes manuais
+    * Criação dos testes candidatos à automação do plano de testes dentro do Robot Framework.
+        * Execução dos cenários automatizados.
+        * Resultados dos testes relatados.
+        * Cobertura dos testes automatizados.
+
+
+## Challenge ao longo da semana:
 ### No Pré-Challenge:
     - Remoção de Cenários de Testes.
     - Renomeação de cenários com IDs atualizados.
