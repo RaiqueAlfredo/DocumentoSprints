@@ -6,6 +6,7 @@ Library          Collections
 Library          String
 Library          OperatingSystem
 Library          jsonschema
+Library          json
 Library          FakerLibrary
 Resource         ../support/variables/variaveis_api.resource
 

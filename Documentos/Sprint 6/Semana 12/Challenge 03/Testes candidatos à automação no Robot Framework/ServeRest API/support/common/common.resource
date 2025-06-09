@@ -11,7 +11,7 @@ Validar Status Code "${statuscode}"
     Log               Status Code: ${statuscode}
 Importar JSON Static
     [Arguments]    ${nome_arquivo}
-    ${arquivo}     Get File  ${EXECDIR}/support/fixtures/static/${nome_arquivo}
+    ${arquivo}     Get File  ${CURDIR}/../../support/fixtures/static/${nome_arquivo}
     ${data}        Evaluate  json.loads('''${arquivo}''')    json
     RETURN         ${data}
 
@@ -75,12 +75,12 @@ Payload cadastrar produto com nome duplicado
     ${Preco}       FakerLibrary.Random Number
     ${Descricao}   FakerLibrary.Paragraph
     ${Quantidade}  FakerLibrary.Random Number
-    ${dados_email_duplicado}    Create Dictionary    
+    ${dados_nome_duplicado}    Create Dictionary    
     ...    nome=${Nome}
     ...    preco=${Preco}
     ...    descricao=${Descricao}
     ...    quantidade=${Quantidade}
-    Set Global Variable    ${dados_email_duplicado}
+    Set Global Variable    ${dados_nome_duplicado}
 Payload atualizar produto com dados válidos
     ${nome}        FakerLibrary.Name
     ${preco}       FakerLibrary.Random Number

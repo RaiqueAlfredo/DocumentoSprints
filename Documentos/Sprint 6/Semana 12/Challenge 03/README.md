@@ -5,7 +5,7 @@ Este repositório foi criado como parte do estágio na Compass UOL, com o objeti
 Dentro do repositório está incluso:
 
 * Plano de Testes refinado.
-    * Arquivo detalhando todas as mudanças de acordo com o dia.
+    * Arquivo detalhando todas as mudanças de acordo com o dia e o Plano de Testes atualizado.
 * Collection do Postman refinada.
     * Execução dos cenários de testes manualmente dentro do Postman.
     * Resultados dos testes relatados dentro de cada cycle test no Jira.
@@ -49,5 +49,6 @@ Dentro do repositório está incluso:
     - Refinei a cobertura de testes para facilitar a visualização.
     - Adicionei novas coberturas de testes, inclusive para os testes automatizados.
     - Relatei os testes automatizado em um cycle test novo.
+    - Relatei minha interpretação com os resultados obtidos dos testes manuais e automatizados.
 ---
 #### Para consultar detalhamente cada melhoria e atualização no decorrer da semana,  acesse o documento "Challenge ao longo da Semana.pdf"

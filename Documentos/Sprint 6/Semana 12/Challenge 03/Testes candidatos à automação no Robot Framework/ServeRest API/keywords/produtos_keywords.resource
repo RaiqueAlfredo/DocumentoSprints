@@ -26,7 +26,7 @@ Validar se retorna mensagem de sucesso
 
 ###US003-CT02: Criar produto com nome duplicado
 POST endpoint /produtos com nome duplicado
-    [Arguments]  ${payload}=${dados_email_duplicado}  ${status_code_desejado}=400
+    [Arguments]  ${payload}=${dados_nome_duplicado}  ${status_code_desejado}=400
     ${response}    POST On Session    
     ...    alias=${alias_base}
     ...    url=/produtos
