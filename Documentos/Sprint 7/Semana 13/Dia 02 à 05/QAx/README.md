@@ -8,4 +8,4 @@
 * Aprendi a configurar o mark85 para usar com o MongoDB
 * Aprendi a realizar testes automatizados de ponta a ponta em Aplicação Web usando Robot Framework
 * Aprendi a usar as melhores estratégias de locators para encontrar informações nas aplicações web e usar elas nos testes automatizados
-* Aprendi a estruturar pastas e arquivos da melhor maneira para realizar os testes automatizados em aplicações web usando Robot Framework
+* Aprendi a estruturar e criar pastas e arquivos da melhor maneira para realizar os testes automatizados em aplicações web usando Robot Framework
