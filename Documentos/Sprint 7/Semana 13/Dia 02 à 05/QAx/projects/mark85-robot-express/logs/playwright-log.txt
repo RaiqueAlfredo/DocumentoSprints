@@ -1,0 +1,825 @@
+{"level":30,"time":"2025-06-13T20:11:07.247Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Listening on 127.0.0.1:64009"}
+(node:1316) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-13T20:11:07.703Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-13T20:11:07.856Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-13T20:11:07.856Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-13T20:11:07.856Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-13T20:11:07.861Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:07.862Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:07.871Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:07.969Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:07.969Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:08.291Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:08.499Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:08.500Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:08.526Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:08.529Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:08.529Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:08.537Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:08.539Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:08.539Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:08.569Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:08.574Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:08.574Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:08.674Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:08.677Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:08.678Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:08.692Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Raique"}
+{"level":30,"time":"2025-06-13T20:11:08.692Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:08.696Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:08.696Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:08.832Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:08.837Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.839Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.840Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.841Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.842Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.843Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.845Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.846Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.847Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:08.847Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=46d88486-7f66-46f6-9e0c-7b548beda7d2"}
+{"level":30,"time":"2025-06-13T20:11:08.847Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:08.850Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:08.858Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=8fa46db8-be86-451f-b079-1ff04219bb7e from context=337eb71a-0dea-4319-8731-c1f9041d299c page stack"}
+{"level":30,"time":"2025-06-13T20:11:08.869Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:08.872Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.872Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:08.875Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:08.875Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:08.877Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:08.877Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:08.882Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:08.945Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:08.945Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:09.255Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:09.318Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:09.318Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:09.338Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:09.341Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:09.341Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:09.347Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:09.350Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:09.350Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:09.379Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:09.383Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:09.383Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:09.418Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:09.421Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:09.421Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:09.433Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=.notice p containing Ocorreu um erro ao fazer login, verifique suas credenciais."}
+{"level":30,"time":"2025-06-13T20:11:09.433Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:09.436Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:09.437Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:09.561Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:09.565Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.566Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.567Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.567Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.568Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.569Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.571Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.571Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.572Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:09.572Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=6b710591-3722-40a8-ada7-20230f977fd6"}
+{"level":30,"time":"2025-06-13T20:11:09.572Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:09.574Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:09.580Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=a63f1dfe-91e2-4fc7-afb2-6843ddbb1109 from context=1faebf1e-2817-4747-8952-aa922ffbada8 page stack"}
+{"level":30,"time":"2025-06-13T20:11:09.590Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:09.594Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.594Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.609Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.609Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.611Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.611Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:09.613Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:09.613Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:09.615Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:09.615Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:09.620Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:09.682Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:09.682Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:09.985Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:09.999Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.000Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.001Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.002Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.003Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.004Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.005Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.006Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.007Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:10.007Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=57a1cb81-1f24-40f6-bfe7-0962590f8f95"}
+{"level":30,"time":"2025-06-13T20:11:10.007Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:10.009Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:10.016Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=4f087a19-fd92-4773-b45d-6dd481bb94ae from context=3a42149f-01b7-4c32-a888-41adf07ae01b page stack"}
+{"level":30,"time":"2025-06-13T20:11:10.027Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:10.031Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.031Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.045Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.045Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.046Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.046Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.049Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:10.049Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:10.051Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:10.051Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:10.055Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:10.115Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:10.115Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:10.416Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:10.443Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:10.469Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:10.472Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:10.472Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:10.487Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:10.489Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:10.489Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:10.500Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:10.500Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:10.503Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.503Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:10.511Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.513Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.513Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:10.520Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.522Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.522Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:10.527Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:10.530Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:10.530Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:10.553Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:10.557Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:10.557Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:10.646Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:10.649Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:10.649Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:10.657Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=.notice p containing Boas vindas ao Mark85, o seu gerenciador de tarefas."}
+{"level":30,"time":"2025-06-13T20:11:10.657Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:10.661Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:10.662Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:10.796Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:10.800Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.801Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.802Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.804Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.805Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.806Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.807Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.808Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.809Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:10.809Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=158c5be2-54d8-46b0-bc8c-e9166d8e1390"}
+{"level":30,"time":"2025-06-13T20:11:10.809Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:10.811Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:10.816Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=fba29b08-ccf5-4b71-9ab5-1f89a43662b2 from context=9380c766-0415-4f9b-b557-08b651b3a517 page stack"}
+{"level":30,"time":"2025-06-13T20:11:10.827Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:10.830Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.830Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:10.833Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:10.833Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:10.834Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:10.834Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:10.839Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:10.903Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:10.903Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:11.217Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:11.279Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:11.303Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:11.306Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:11.306Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:11.320Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:11.323Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:11.323Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:11.334Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:11.334Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:11.337Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.337Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:11.345Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.348Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.348Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:11.354Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.356Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.356Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:11.361Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:11.364Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:11.364Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:11.389Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:11.393Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:11.393Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:11.423Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:11.426Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:11.426Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:11.432Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=.notice p containing Oops! Já existe uma conta com o e-mail informado."}
+{"level":30,"time":"2025-06-13T20:11:11.432Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:11.435Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:11.435Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:11.572Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:11.576Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.577Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.578Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.579Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.580Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.580Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.585Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.586Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.587Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:11.587Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=d08a2633-4321-4c9a-bc65-8e61a8d7488d"}
+{"level":30,"time":"2025-06-13T20:11:11.587Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:11.589Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:11.594Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=466b6dd0-6401-4649-ac76-93eb22ee0206 from context=c97e41cc-da6e-479e-896f-28b74b3d6fea page stack"}
+{"level":30,"time":"2025-06-13T20:11:11.605Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:11.608Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.608Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:11.610Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:11.610Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:11.612Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:11.612Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:11.617Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:11.678Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:11.678Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:11.981Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:11.986Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:12.010Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:12.012Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.013Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:12.027Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.030Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:12.030Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:12.041Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:12.041Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:12.044Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.044Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.051Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.053Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.053Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.059Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.061Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.061Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.066Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.068Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:12.068Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:12.091Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:12.094Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.094Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe seu nome completo in page."}
+{"level":30,"time":"2025-06-13T20:11:12.097Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.100Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.100Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe seu e-email in page."}
+{"level":30,"time":"2025-06-13T20:11:12.102Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.104Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.104Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:12.106Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.109Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:12.109Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:12.236Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:12.240Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.241Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.242Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.242Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.244Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.244Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.246Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.246Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.247Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:12.247Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=b6f38e41-70af-4ba5-bb4d-fca826caec39"}
+{"level":30,"time":"2025-06-13T20:11:12.247Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:12.249Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:12.254Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=f2a0358d-15bd-44a5-ad9a-361bdffecc9c from context=f00a2a34-bb60-45c3-a08d-c3340986c126 page stack"}
+{"level":30,"time":"2025-06-13T20:11:12.265Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:12.267Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.267Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.270Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:12.270Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:12.272Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:12.272Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:12.276Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:12.336Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:12.336Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:12.630Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:12.634Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:12.657Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:12.660Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.660Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:12.675Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.677Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:12.677Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:12.689Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:12.689Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:12.692Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.692Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.699Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.701Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.701Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.707Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.709Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.709Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:12.714Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:12.717Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:12.717Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:12.742Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:12.745Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.745Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Digite um e-mail válido in page."}
+{"level":30,"time":"2025-06-13T20:11:12.747Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:12.750Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:12.750Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:12.879Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:12.883Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.883Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.885Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.886Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.886Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.887Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.889Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.890Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.891Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:12.891Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=5d96139c-907b-470b-82cb-63ce890985e8"}
+{"level":30,"time":"2025-06-13T20:11:12.891Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:12.893Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:12.899Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=0508d587-e3c3-49ec-bad2-8216658495f3 from context=03dfefbc-6318-4d3f-9d16-ec32357f55e3 page stack"}
+{"level":30,"time":"2025-06-13T20:11:12.910Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:12.913Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.913Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:12.916Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:12.916Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:12.918Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:12.918Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:12.924Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:12.992Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:12.992Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:13.314Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:13.319Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.344Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.347Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.347Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.362Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.364Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.364Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.376Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:13.376Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.379Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.379Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.386Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.388Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.388Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.393Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.396Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.396Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.401Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.403Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.403Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:13.425Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.428Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.428Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:13.430Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.433Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.451Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.454Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.454Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.464Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.466Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.466Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.478Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:13.478Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.481Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.481Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.486Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.489Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.489Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.494Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.496Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.496Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.501Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.503Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.504Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:13.524Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.527Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.527Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:13.528Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.531Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.550Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.552Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.552Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.562Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.565Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.565Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.576Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:13.576Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.579Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.579Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.584Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.586Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.586Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.592Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.594Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.594Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.598Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.600Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.600Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:13.621Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.623Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.623Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:13.625Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.628Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.646Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.649Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.649Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.659Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.662Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.662Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.672Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:13.672Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.675Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.675Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.680Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.682Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.682Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.687Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.689Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.689Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.694Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.696Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.696Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:13.717Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.719Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.719Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:13.721Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.724Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.742Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-13T20:11:13.744Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.745Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.755Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.757Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.758Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=h1 in page."}
+{"level":30,"time":"2025-06-13T20:11:13.769Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=h1 containing Faça seu cadastro"}
+{"level":30,"time":"2025-06-13T20:11:13.769Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:13.773Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.773Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=name] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.778Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.780Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.780Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=email] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.786Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.788Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.788Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=password] in page."}
+{"level":30,"time":"2025-06-13T20:11:13.793Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:13.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button[type=submit] >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:13.813Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:13.816Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.816Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Informe uma senha com pelo menos 6 digitos in page."}
+{"level":30,"time":"2025-06-13T20:11:13.818Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:13.822Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:13.822Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-7.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:13.950Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:13.954Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.955Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.956Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.956Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.957Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.958Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.959Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.960Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.960Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:13.960Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=1b831722-2a5c-497b-be5f-e214d41968c0"}
+{"level":30,"time":"2025-06-13T20:11:13.960Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:13.962Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:13.968Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=417028eb-45fe-431b-808e-da71035ffca4 from context=df4ac8df-0db8-4bfe-8b65-df7542106ed2 page stack"}
+{"level":30,"time":"2025-06-13T20:11:13.978Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:13.982Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.982Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.998Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.998Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.999Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:13.999Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:14.002Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:14.002Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:14.003Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:14.003Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:14.008Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:14.068Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:14.068Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:14.373Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:14.478Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.478Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:14.498Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.501Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.501Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:14.507Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.509Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:14.509Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:14.535Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:14.538Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:14.538Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:14.630Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:14.633Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:14.633Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:14.643Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Steve"}
+{"level":30,"time":"2025-06-13T20:11:14.643Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:14.646Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:14.646Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.button-add in page."}
+{"level":30,"time":"2025-06-13T20:11:14.664Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:14.667Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.667Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=tarefa] in page."}
+{"level":30,"time":"2025-06-13T20:11:14.671Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.674Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:14.674Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:14.679Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:15.683Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:15.683Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:15.692Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:15.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:15.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:15.699Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:16.703Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:16.703Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:16.711Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:16.714Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:16.714Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:16.719Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:17.723Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:17.723Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:17.728Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:17.730Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:17.730Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:17.745Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:17.748Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:17.748Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.task-todo >> text=Criar uma nova versão do Ipod in page."}
+{"level":30,"time":"2025-06-13T20:11:17.841Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:17.845Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:17.845Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-8.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:17.979Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:17.983Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.984Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.985Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.986Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.987Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.988Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.990Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.991Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:17.992Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:17.992Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=0461c6ac-baba-4ed8-ac6b-0e3c64d4a210"}
+{"level":30,"time":"2025-06-13T20:11:17.992Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:17.994Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:18.000Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=d5714f32-d3c2-48b6-aee6-927bf6bf4b45 from context=7579c34c-fdd2-4ac6-8541-c99336b513cb page stack"}
+{"level":30,"time":"2025-06-13T20:11:18.012Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:18.015Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.015Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.018Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:18.018Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:18.020Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:18.020Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:18.025Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:18.085Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:18.085Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:18.396Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:18.590Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.590Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:18.610Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.612Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.612Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:18.619Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.621Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.621Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:18.644Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.648Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:18.648Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:18.693Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:18.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:18.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:18.707Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Amanda"}
+{"level":30,"time":"2025-06-13T20:11:18.707Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:18.710Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.710Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.button-add in page."}
+{"level":30,"time":"2025-06-13T20:11:18.735Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.738Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.738Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=tarefa] in page."}
+{"level":30,"time":"2025-06-13T20:11:18.743Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:18.747Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.747Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:18.764Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:18.767Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:18.767Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:18.793Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:18.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:18.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:18.801Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=.notice p containing Oops! Tarefa duplicada."}
+{"level":30,"time":"2025-06-13T20:11:18.801Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:18.805Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:18.805Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-9.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:18.933Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:18.937Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.937Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.938Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.939Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.940Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.941Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.942Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.943Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.944Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:18.944Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=52488501-8a75-4b18-a7c1-783ff8842ad0"}
+{"level":30,"time":"2025-06-13T20:11:18.944Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:18.946Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:18.952Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=c1dfaf6e-ffd8-4361-8550-b97cc1da0421 from context=96c70d8c-b78f-4c89-b337-6b51087af4cb page stack"}
+{"level":30,"time":"2025-06-13T20:11:18.963Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:18.966Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.966Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:18.969Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:18.969Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:18.971Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:18.971Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:18.976Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:19.040Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:19.040Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:19.353Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:19.548Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.548Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:19.568Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.570Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.570Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:19.577Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.579Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:19.579Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:19.601Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:19.604Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:19.605Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:19.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:19.698Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:19.698Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:19.709Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Carlos"}
+{"level":30,"time":"2025-06-13T20:11:19.709Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:19.711Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:19.711Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.button-add in page."}
+{"level":30,"time":"2025-06-13T20:11:19.728Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:19.731Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.731Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=tarefa] in page."}
+{"level":30,"time":"2025-06-13T20:11:19.737Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.740Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:19.740Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:19.745Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:20.749Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:20.749Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:20.756Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:20.759Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:20.759Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:20.762Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:21.766Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:21.766Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:21.771Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:21.774Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:21.774Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:21.778Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:22.781Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:22.781Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:22.786Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:22.788Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:22.789Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:22.792Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:23.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method press"}
+{"level":30,"time":"2025-06-13T20:11:23.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[name=tags] in page."}
+{"level":30,"time":"2025-06-13T20:11:23.800Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method press"}
+{"level":30,"time":"2025-06-13T20:11:23.802Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:23.802Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
+{"level":30,"time":"2025-06-13T20:11:23.813Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:23.816Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:23.816Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:23.818Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:23.820Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:23.820Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.notice p in page."}
+{"level":30,"time":"2025-06-13T20:11:23.825Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=.notice p containing Oops! Limite de tags atingido."}
+{"level":30,"time":"2025-06-13T20:11:23.825Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:23.829Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:23.829Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-10.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:23.955Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:23.959Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.960Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.961Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.961Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.962Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.963Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.965Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.965Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.966Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:23.966Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=52404b0d-909b-40c8-9f9e-6355bd052be4"}
+{"level":30,"time":"2025-06-13T20:11:23.966Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:23.968Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:23.973Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=45d95137-401b-41e2-9cb6-68047d291b46 from context=a1a93396-293b-4078-ab36-f9a61a26f830 page stack"}
+{"level":30,"time":"2025-06-13T20:11:23.985Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:23.989Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:23.989Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.003Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.003Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.004Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.004Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.006Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:24.006Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:24.008Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:24.008Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:24.012Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:24.076Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:24.076Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:24.390Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:24.578Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:24.578Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:24.598Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:24.600Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:24.600Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:24.606Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:24.609Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:24.609Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:24.631Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:24.635Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.635Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:24.676Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.679Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:24.679Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:24.690Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Hank"}
+{"level":30,"time":"2025-06-13T20:11:24.690Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:24.694Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.694Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with xpath=//strong[text()=\"Criar a IA do Ultron\"]/..//button[@class=\"task-remove\"] in page."}
+{"level":30,"time":"2025-06-13T20:11:24.697Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.699Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:24.699Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with xpath=//strong[text()=\"Criar a IA do Ultron\"]/..//button[@class=\"task-remove\"] in page."}
+{"level":30,"time":"2025-06-13T20:11:24.712Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:24.715Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.715Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.task-todo >> text=Criar a IA do Ultron in page."}
+{"level":30,"time":"2025-06-13T20:11:24.791Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:24.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:24.795Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-11.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:24.927Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:24.930Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.931Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.932Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.933Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.934Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.934Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.936Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.936Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.937Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:24.937Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=f8634439-5112-4030-9720-74932aafd1d8"}
+{"level":30,"time":"2025-06-13T20:11:24.937Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:24.939Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:24.944Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=5b6fed3a-95b8-431a-9f4e-0b230121f9f4 from context=9da7089d-094d-453d-a868-207f68b68f1f page stack"}
+{"level":30,"time":"2025-06-13T20:11:24.955Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:24.959Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.959Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.975Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.976Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.977Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.977Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:24.979Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:24.979Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-13T20:11:24.981Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:24.981Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-13T20:11:24.985Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:25.047Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-13T20:11:25.047Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:25.478Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-13T20:11:25.668Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:25.668Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder$=mail] in page."}
+{"level":30,"time":"2025-06-13T20:11:25.687Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:25.690Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:25.690Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=input[placeholder=Senha] in page."}
+{"level":30,"time":"2025-06-13T20:11:25.695Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-13T20:11:25.697Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:25.697Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2025-06-13T20:11:25.722Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:25.726Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.726Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:25.768Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.771Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:25.771Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=header .right small in page."}
+{"level":30,"time":"2025-06-13T20:11:25.782Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Retrieved text for element css=header .right small containing Olá, Tony"}
+{"level":30,"time":"2025-06-13T20:11:25.782Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-13T20:11:25.785Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.785Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with xpath=//strong[text()=\"Criar uma nova IA\"]/..//button[@class=\"item-toggle\"] in page."}
+{"level":30,"time":"2025-06-13T20:11:25.789Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.791Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-13T20:11:25.791Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with xpath=//strong[text()=\"Criar uma nova IA\"]/..//button[@class=\"item-toggle\"] in page."}
+{"level":30,"time":"2025-06-13T20:11:25.803Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method click"}
+{"level":30,"time":"2025-06-13T20:11:25.806Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.807Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.task-done >> text=Criar uma nova IA in page."}
+{"level":30,"time":"2025-06-13T20:11:25.900Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-13T20:11:25.902Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getStyle"}
+{"level":30,"time":"2025-06-13T20:11:25.902Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Getting css of element on page"}
+{"level":30,"time":"2025-06-13T20:11:25.902Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Strict mode is enabled, find Locator with css=.task-done >> text=Criar uma nova IA in page."}
+{"level":30,"time":"2025-06-13T20:11:25.906Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getStyle"}
+{"level":30,"time":"2025-06-13T20:11:25.910Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:25.910Z","pid":1316,"hostname":"SKY-P4R4DOXO","Take screenshot with options: ":{"path":"C:\\Users\\raiqu\\Desktop\\Nero\\Estágio\\Documentos das Sprints\\Documentos\\Sprint 7\\Semana 13\\Dia 02 à 05\\QAx\\projects\\mark85-robot-express\\logs\\browser\\screenshot\\robotframework-browser-screenshot-12.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-13T20:11:26.036Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-13T20:11:26.040Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.041Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.042Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.042Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.043Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.044Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.045Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.047Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.047Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active context"}
+{"level":30,"time":"2025-06-13T20:11:26.048Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changing current active page: page=587f0c18-e4ca-4f01-b6d8-84809b9c1193"}
+{"level":30,"time":"2025-06-13T20:11:26.048Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Changed active page"}
+{"level":30,"time":"2025-06-13T20:11:26.049Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:26.054Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Removed page=daa6654d-e1b4-4f68-9f9d-52bc6e9b4995 from context=dce3ce9e-65ce-44db-bd0c-294603c3e541 page stack"}
+{"level":30,"time":"2025-06-13T20:11:26.066Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-13T20:11:26.070Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.070Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-13T20:11:26.131Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-13T20:11:26.238Z","pid":1316,"hostname":"SKY-P4R4DOXO","msg":"End of node method closeAllBrowsers"}
